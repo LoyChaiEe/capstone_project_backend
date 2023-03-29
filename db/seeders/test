@@ -1,0 +1,23 @@
+ [
+  {
+    username: "adminAdam",
+    first_name: "Admin",
+    last_name: "Adam",
+    email_address: "adminadam@gmail.com",
+    profile_picture_url: "gs://waifu-3b5e3.appspot.com/profile-picture-url/AdminAdam.jpg"
+  },
+  {
+    username: "adminBella",
+    first_name: "Admin",
+    last_name: "Bella",
+    email_address: "adminbella@gmail.com",
+    profile_picture_url: "gs://waifu-3b5e3.appspot.com/profile-picture-url/AdminBella.jpg"
+  },
+  {
+    username: "adminCharlie",
+    first_name: "Admin",
+    last_name: "Charlie",
+    email_address: "admincharlie@gmail.com",
+    profile_picture_url: "gs://waifu-3b5e3.appspot.com/profile-picture-url/AdminCharlie.jpg"
+  }
+]
