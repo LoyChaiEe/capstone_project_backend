@@ -7,7 +7,6 @@ module.exports = (sequelize, DataTypes) => {
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
-
     //Asscoiation will be added later
   }
   User.init(
@@ -27,12 +26,12 @@ module.exports = (sequelize, DataTypes) => {
       email_address: {
         type: DataTypes.STRING,
         allowNull: false,
-        validate: { notNull: { msg: "Please input an email address." } },
+        // validate: { notNull: { msg: "Please input an email address." } },
       },
       profile_pic_url: {
         type: DataTypes.STRING,
         allowNull: false,
-        validate: { notNull: { msg: "Please upload a valid photo." } },
+        // validate: { notNull: { msg: "Please upload a valid photo." } },
       },
     },
     {

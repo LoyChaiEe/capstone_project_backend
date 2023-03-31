@@ -7,6 +7,8 @@ class UsersRouter {
   }
   routes() {
     //Insert routes and controller's api calls here
+    router.get("/", this.controller.getAll.bind(this.controller));
+    router.get("/:email", this.controller.getOne.bind(this.controller));
     return router;
   }
 }
