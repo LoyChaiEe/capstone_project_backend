@@ -20,28 +20,25 @@ class UserController extends BaseController {
   async addOne(req, res) {
     const { username, first_name, last_name, email_address, profile_pic_url } =
       req.body;
-    console.log(
-      username,
-      first_name,
-      last_name,
-      email_address,
-      profile_pic_url
-    );
     try {
-      const user = await this.model.findOrCreate({
-        username: username,
-        first_name: first_name,
-        last_name: last_name,
-        email_address: email_address,
-        profile_pic_url: profile_pic_url,
+      const emailExists = await this.model.findOne({
+        where: {
+          email_address: email_address,
+        },
       });
-      console.log(
-        username,
-        first_name,
-        last_name,
-        email_address,
-        profile_pic_url
-      );
+      if (emailExists) {
+        res.json("Email exists");
+      } else {
+        const user = await this.model.create({
+          where: { email_address: email_address },
+          username: username,
+          first_name: first_name,
+          last_name: last_name,
+          email_address: email_address,
+          profile_pic_url: profile_pic_url,
+        });
+        return res.json(user);
+      }
     } catch (err) {
       return res.status(400).json({ error: true, msg: err });
     }
