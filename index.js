@@ -34,11 +34,11 @@ app.use(express.json());
 const usersController = new UsersController(user);
 const charactersController = new CharactersController(character);
 // initializing routers
-const userRouter = new UsersRouter(usersController).routes();
-const characterRouter = new CharactersRouter(charactersController).routes();
+const usersRouter = new UsersRouter(usersController, checkJwt).routes();
+const charactersRouter = new CharactersRouter(charactersController).routes();
 // routers
-app.use("/users", userRouter);
-app.use("/words", characterRouter);
+app.use("/users", usersRouter);
+app.use("/words", charactersRouter);
 
 app.listen(process.env.PORT, () => {
   console.log(`Express app listening on port ${PORT}!`);
