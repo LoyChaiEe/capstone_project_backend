@@ -21,8 +21,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/01-a.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "い",
@@ -30,8 +28,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/02-i.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "う",
@@ -39,8 +35,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/03-u.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "え",
@@ -48,8 +42,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/04-e.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "お",
@@ -57,8 +49,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/05-o.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "か",
@@ -66,8 +56,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/06-ka.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "き",
@@ -75,8 +63,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/07-ki.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "く",
@@ -84,8 +70,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/08-ku.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "け",
@@ -93,8 +77,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/09-ke.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "こ",
@@ -102,8 +84,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/10-ko.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "さ",
@@ -111,8 +91,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/11-sa.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "し",
@@ -120,8 +98,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/12-shi.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "す",
@@ -129,8 +105,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/13-su.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "せ",
@@ -138,8 +112,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/14-se.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "そ",
@@ -147,8 +119,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/15-so.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "た",
@@ -156,8 +126,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/15-so.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ち",
@@ -165,8 +133,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/17-chi.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "つ",
@@ -174,8 +140,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/18-tsu.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "て",
@@ -183,8 +147,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/19-te.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "と",
@@ -192,8 +154,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/20-to.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "な",
@@ -201,8 +161,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/21-na.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "に",
@@ -210,8 +168,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/22-ni.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ぬ",
@@ -219,8 +175,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/23-nu.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ね",
@@ -228,8 +182,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/24-ne.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "の",
@@ -237,8 +189,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/25-no.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "は",
@@ -246,8 +196,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/26-ha.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ひ",
@@ -255,8 +203,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/27-hi.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ふ",
@@ -264,8 +210,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/28-fu.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "へ",
@@ -273,8 +217,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/29-he.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ほ",
@@ -282,8 +224,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/30-ho.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ま",
@@ -291,8 +231,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/31-ma.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "み",
@@ -300,8 +238,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/32-mi.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "む",
@@ -309,8 +245,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/33-mu.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "め",
@@ -318,8 +252,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/34-me.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "も",
@@ -327,8 +259,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/35-mo.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "や",
@@ -336,8 +266,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/36-ya.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ゆ",
@@ -345,8 +273,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/37-yu.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "よ",
@@ -354,8 +280,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/38-yo.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ら",
@@ -363,8 +287,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/39-ra.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "り",
@@ -372,8 +294,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/40-ri.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "る",
@@ -381,8 +301,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/41-ru.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "れ",
@@ -390,8 +308,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/42-re.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ろ",
@@ -399,8 +315,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/43-ro.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "わ",
@@ -408,8 +322,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/44-wa.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "を",
@@ -417,8 +329,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/05-o.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ん",
@@ -426,8 +336,6 @@ module.exports = {
           type: "hiragana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/46-n.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "が",
@@ -435,8 +343,6 @@ module.exports = {
           type: "hiragana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/47-ga.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ぎ",
@@ -444,8 +350,6 @@ module.exports = {
           type: "hiragana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/48-gi.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ぐ",
@@ -453,8 +357,6 @@ module.exports = {
           type: "hiragana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/49-gu.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "げ",
@@ -462,8 +364,6 @@ module.exports = {
           type: "hiragana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/50-ge.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ご",
@@ -471,8 +371,6 @@ module.exports = {
           type: "hiragana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/51-go.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ざ",
@@ -480,8 +378,6 @@ module.exports = {
           type: "hiragana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/52-za.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "じ",
@@ -489,8 +385,6 @@ module.exports = {
           type: "hiragana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/53-ji.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ず",
@@ -498,8 +392,6 @@ module.exports = {
           type: "hiragana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/54-zu.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ぜ",
@@ -507,8 +399,6 @@ module.exports = {
           type: "hiragana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/55-ze.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ぞ",
@@ -516,8 +406,6 @@ module.exports = {
           type: "hiragana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/56-zo.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "だ",
@@ -525,8 +413,6 @@ module.exports = {
           type: "hiragana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/57-da.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ぢ",
@@ -534,8 +420,6 @@ module.exports = {
           type: "hiragana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/58-ji.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "づ",
@@ -543,8 +427,6 @@ module.exports = {
           type: "hiragana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/59-zu.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "で",
@@ -552,8 +434,6 @@ module.exports = {
           type: "hiragana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/60-de.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ど",
@@ -561,8 +441,6 @@ module.exports = {
           type: "hiragana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/61-do.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ば",
@@ -570,8 +448,6 @@ module.exports = {
           type: "hiragana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/62-ba.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "び",
@@ -579,8 +455,6 @@ module.exports = {
           type: "hiragana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/63-bi.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ぶ",
@@ -588,8 +462,6 @@ module.exports = {
           type: "hiragana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/64-bu.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "べ",
@@ -597,8 +469,6 @@ module.exports = {
           type: "hiragana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/65-be.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ぼ",
@@ -606,8 +476,6 @@ module.exports = {
           type: "hiragana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/66-bo.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ぱ",
@@ -615,8 +483,6 @@ module.exports = {
           type: "hiragana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/67-pa.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ぴ",
@@ -624,8 +490,6 @@ module.exports = {
           type: "hiragana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/68-pi.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ぷ",
@@ -633,8 +497,6 @@ module.exports = {
           type: "hiragana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/69-pu.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ぺ",
@@ -642,8 +504,6 @@ module.exports = {
           type: "hiragana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/70-pe.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ぽ",
@@ -651,8 +511,6 @@ module.exports = {
           type: "hiragana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/71-po.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ア",
@@ -660,8 +518,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/01-a.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "イ",
@@ -669,8 +525,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/02-i.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ウ",
@@ -678,8 +532,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/03-u.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "エ",
@@ -687,8 +539,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/04-e.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "オ",
@@ -696,8 +546,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/05-o.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "カ",
@@ -705,8 +553,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/06-ka.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "キ",
@@ -714,8 +560,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/07-ki.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ク",
@@ -723,8 +567,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/08-ku.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ケ",
@@ -732,8 +574,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/09-ke.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "コ",
@@ -741,8 +581,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/10-ko.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "サ",
@@ -750,8 +588,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/11-sa.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "シ",
@@ -759,8 +595,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/12-shi.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ス",
@@ -768,8 +602,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/13-su.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "セ",
@@ -777,8 +609,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/14-se.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ソ",
@@ -786,8 +616,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/15-so.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "タ",
@@ -795,8 +623,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/15-so.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "チ",
@@ -804,8 +630,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/17-chi.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ツ",
@@ -813,8 +637,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/18-tsu.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "テ",
@@ -822,8 +644,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/19-te.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ト",
@@ -831,8 +651,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/20-to.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ナ",
@@ -840,8 +658,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/21-na.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ニ",
@@ -849,8 +665,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/22-ni.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ヌ",
@@ -858,8 +672,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/23-nu.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ネ",
@@ -867,8 +679,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/24-ne.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ノ",
@@ -876,8 +686,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/25-no.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ハ",
@@ -885,8 +693,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/26-ha.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ヒ",
@@ -894,8 +700,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/27-hi.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "フ",
@@ -903,8 +707,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/28-fu.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ヘ",
@@ -912,8 +714,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/29-he.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ホ",
@@ -921,8 +721,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/30-ho.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "マ",
@@ -930,8 +728,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/31-ma.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ミ",
@@ -939,8 +735,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/32-mi.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ム",
@@ -948,8 +742,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/33-mu.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "メ",
@@ -957,8 +749,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/34-me.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "モ",
@@ -966,8 +756,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/35-mo.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ヤ",
@@ -975,8 +763,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/36-ya.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ユ",
@@ -984,8 +770,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/37-yu.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ヨ",
@@ -993,8 +777,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/38-yo.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ラ",
@@ -1002,8 +784,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/39-ra.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "リ",
@@ -1011,8 +791,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/40-ri.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ル",
@@ -1020,8 +798,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/41-ru.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "レ",
@@ -1029,8 +805,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/42-re.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ロ",
@@ -1038,8 +812,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/43-ro.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ワ",
@@ -1047,8 +819,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/44-wa.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ヲ",
@@ -1056,8 +826,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/05-o.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ン",
@@ -1065,8 +833,6 @@ module.exports = {
           type: "katakana-basic",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/46-n.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ガ",
@@ -1074,8 +840,6 @@ module.exports = {
           type: "katakana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/47-ga.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ギ",
@@ -1083,8 +847,6 @@ module.exports = {
           type: "katakana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/48-gi.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "グ",
@@ -1092,8 +854,6 @@ module.exports = {
           type: "katakana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/49-gu.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ゲ",
@@ -1101,8 +861,6 @@ module.exports = {
           type: "katakana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/50-ge.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ゴ",
@@ -1110,8 +868,6 @@ module.exports = {
           type: "katakana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/51-go.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ザ",
@@ -1119,8 +875,6 @@ module.exports = {
           type: "katakana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/52-za.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ジ",
@@ -1128,8 +882,6 @@ module.exports = {
           type: "katakana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/53-ji.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ズ",
@@ -1137,8 +889,6 @@ module.exports = {
           type: "katakana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/54-zu.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ゼ",
@@ -1146,8 +896,6 @@ module.exports = {
           type: "katakana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/55-ze.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ゾ",
@@ -1155,8 +903,6 @@ module.exports = {
           type: "katakana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/56-zo.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ダ",
@@ -1164,8 +910,6 @@ module.exports = {
           type: "katakana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/57-da.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ジ",
@@ -1173,8 +917,6 @@ module.exports = {
           type: "katakana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/58-ji.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ズ",
@@ -1182,8 +924,6 @@ module.exports = {
           type: "katakana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/59-zu.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "デ",
@@ -1191,8 +931,6 @@ module.exports = {
           type: "katakana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/60-de.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ド",
@@ -1200,8 +938,6 @@ module.exports = {
           type: "katakana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/61-do.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "バ",
@@ -1209,8 +945,6 @@ module.exports = {
           type: "katakana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/62-ba.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ビ",
@@ -1218,8 +952,6 @@ module.exports = {
           type: "katakana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/63-bi.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ブ",
@@ -1227,8 +959,6 @@ module.exports = {
           type: "katakana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/64-bu.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ベ",
@@ -1236,8 +966,6 @@ module.exports = {
           type: "katakana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/65-be.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ボ",
@@ -1245,8 +973,6 @@ module.exports = {
           type: "katakana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/66-bo.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "パ",
@@ -1254,8 +980,6 @@ module.exports = {
           type: "katakana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/67-pa.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ピ",
@@ -1263,8 +987,6 @@ module.exports = {
           type: "katakana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/68-pi.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "プ",
@@ -1272,8 +994,6 @@ module.exports = {
           type: "katakana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/69-pu.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ペ",
@@ -1281,8 +1001,6 @@ module.exports = {
           type: "katakana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/70-pe.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ポ",
@@ -1290,8 +1008,6 @@ module.exports = {
           type: "katakana-dakuon",
           meaning: "",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/71-po.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "いち",
@@ -1299,8 +1015,6 @@ module.exports = {
           type: "vocabs",
           meaning: "one",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/143-ishi.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "さん",
@@ -1308,8 +1022,6 @@ module.exports = {
           type: "vocabs",
           meaning: "three",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/144-san.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "よん",
@@ -1317,8 +1029,6 @@ module.exports = {
           type: "vocabs",
           meaning: "four",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/145-yon.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ろく",
@@ -1326,8 +1036,6 @@ module.exports = {
           type: "vocabs",
           meaning: "six",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/146-roku.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "なな",
@@ -1335,8 +1043,6 @@ module.exports = {
           type: "vocabs",
           meaning: "seven",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/147-nana.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "はち",
@@ -1344,8 +1050,6 @@ module.exports = {
           type: "vocabs",
           meaning: "eight",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/148-hachi.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "きゅう",
@@ -1353,8 +1057,6 @@ module.exports = {
           type: "vocabs",
           meaning: "nine",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/149-kyuu.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "じゅう",
@@ -1362,8 +1064,6 @@ module.exports = {
           type: "vocabs",
           meaning: "ten",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/150-jyuu.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "すし",
@@ -1371,8 +1071,6 @@ module.exports = {
           type: "vocabs",
           meaning: "sushi",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/151-sushi.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "えき",
@@ -1380,8 +1078,6 @@ module.exports = {
           type: "vocabs",
           meaning: "train station",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/152-eki.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "まち",
@@ -1389,8 +1085,6 @@ module.exports = {
           type: "vocabs",
           meaning: "town",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/153-machi.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "みせ",
@@ -1398,8 +1092,6 @@ module.exports = {
           type: "vocabs",
           meaning: "store",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/154-mise.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "です",
@@ -1407,8 +1099,6 @@ module.exports = {
           type: "vocabs",
           meaning: "it is/she is/he is",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/155-desu.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ありがとう",
@@ -1416,8 +1106,6 @@ module.exports = {
           type: "vocabs",
           meaning: "thank you",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/156-arigatou.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "これ",
@@ -1425,8 +1113,6 @@ module.exports = {
           type: "vocabs",
           meaning: "that",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/157-kore.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "それ",
@@ -1434,8 +1120,6 @@ module.exports = {
           type: "vocabs",
           meaning: "this",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/158-sore.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ちいさい",
@@ -1443,8 +1127,6 @@ module.exports = {
           type: "vocabs",
           meaning: "small",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/159-chiisaai.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "たかい",
@@ -1452,8 +1134,6 @@ module.exports = {
           type: "vocabs",
           meaning: "expensive",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/160-takai.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "そば",
@@ -1461,8 +1141,6 @@ module.exports = {
           type: "vocabs",
           meaning: "soba",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/161-soba.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ごめん",
@@ -1470,8 +1148,6 @@ module.exports = {
           type: "vocabs",
           meaning: "sorry",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/162-gomen.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "やすい",
@@ -1479,8 +1155,6 @@ module.exports = {
           type: "vocabs",
           meaning: "cheap",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/163-yasui.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "いい",
@@ -1488,8 +1162,6 @@ module.exports = {
           type: "vocabs",
           meaning: "good",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/164-ii.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "おいし",
@@ -1497,8 +1169,6 @@ module.exports = {
           type: "vocabs",
           meaning: "tasty",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/165-oishi.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "はい",
@@ -1506,8 +1176,6 @@ module.exports = {
           type: "vocabs",
           meaning: "yes",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/166-hai.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "こんにちは",
@@ -1515,8 +1183,6 @@ module.exports = {
           type: "vocabs",
           meaning: "hello",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/167-konichiwa.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ねこ",
@@ -1524,8 +1190,6 @@ module.exports = {
           type: "vocabs",
           meaning: "cat",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/168-neko.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "白 しろ",
@@ -1533,8 +1197,6 @@ module.exports = {
           type: "vocabs",
           meaning: "white",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/169-shiroi.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "はし",
@@ -1542,8 +1204,6 @@ module.exports = {
           type: "vocabs",
           meaning: "chopsticks",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/170-hashi.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "とり",
@@ -1551,8 +1211,6 @@ module.exports = {
           type: "vocabs",
           meaning: "bird",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/171-tori.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "くろ",
@@ -1560,8 +1218,6 @@ module.exports = {
           type: "vocabs",
           meaning: "black",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/172-kuro.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "かわいい",
@@ -1569,8 +1225,6 @@ module.exports = {
           type: "vocabs",
           meaning: "cute",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/173-kawaii.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "おちゃ",
@@ -1578,8 +1232,6 @@ module.exports = {
           type: "vocabs",
           meaning: "  tea",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/174-ocha.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "にく",
@@ -1587,8 +1239,6 @@ module.exports = {
           type: "vocabs",
           meaning: "meat",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/175-niku.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ください",
@@ -1596,8 +1246,6 @@ module.exports = {
           type: "vocabs",
           meaning: "please",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/176-kudaisai.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "すみません",
@@ -1605,8 +1253,6 @@ module.exports = {
           type: "vocabs",
           meaning: "excuse me",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/177-sumimasen.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ともだち",
@@ -1614,8 +1260,6 @@ module.exports = {
           type: "vocabs",
           meaning: "friend",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/178-tomadachi.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "せんせい",
@@ -1623,8 +1267,6 @@ module.exports = {
           type: "vocabs",
           meaning: "teacher",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/179-sensei.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "いしゃ",
@@ -1632,8 +1274,6 @@ module.exports = {
           type: "vocabs",
           meaning: "doctor",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/180-isha.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: " がくせい",
@@ -1641,8 +1281,6 @@ module.exports = {
           type: "vocabs",
           meaning: "student",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/181-gakusai.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "いぬ",
@@ -1650,8 +1288,6 @@ module.exports = {
           type: "vocabs",
           meaning: "dog",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/182-inu.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ですか",
@@ -1659,8 +1295,6 @@ module.exports = {
           type: "vocabs",
           meaning: "is it/is she/is he",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/183-desuka.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "かさ",
@@ -1668,8 +1302,6 @@ module.exports = {
           type: "vocabs",
           meaning: "umbrella",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/184-kasa.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ぼうし",
@@ -1677,8 +1309,6 @@ module.exports = {
           type: "vocabs",
           meaning: "hat",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/185-boushi.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "と",
@@ -1686,8 +1316,6 @@ module.exports = {
           type: "vocabs",
           meaning: "and",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/186-to.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "また",
@@ -1695,8 +1323,6 @@ module.exports = {
           type: "vocabs",
           meaning: "or",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/187-mata.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "みず",
@@ -1704,8 +1330,6 @@ module.exports = {
           type: "vocabs",
           meaning: "water",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/188-mizu.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "に",
@@ -1713,8 +1337,6 @@ module.exports = {
           type: "vocabs",
           meaning: "two",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/22-ni.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "ご",
@@ -1722,8 +1344,6 @@ module.exports = {
           type: "vocabs",
           meaning: "five",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/51-go.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "じゅういち",
@@ -1731,8 +1351,6 @@ module.exports = {
           type: "vocabs",
           meaning: "eleven",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/191-jyuu-ichi.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "じゅうに",
@@ -1740,8 +1358,6 @@ module.exports = {
           type: "vocabs",
           meaning: "twevle",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/192-jyuu-ni.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "りんご",
@@ -1749,8 +1365,6 @@ module.exports = {
           type: "vocabs",
           meaning: "apple",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/193-ringo.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "おおきい",
@@ -1758,8 +1372,6 @@ module.exports = {
           type: "vocabs",
           meaning: "big",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/194-ookii.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "みらい",
@@ -1767,8 +1379,6 @@ module.exports = {
           type: "vocabs",
           meaning: "future",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/195-mirai.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "つき",
@@ -1776,8 +1386,6 @@ module.exports = {
           type: "vocabs",
           meaning: "moon",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/196-tsuki.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "たいよう",
@@ -1785,8 +1393,6 @@ module.exports = {
           type: "vocabs",
           meaning: "sun",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/197-taiyou.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "いいえ",
@@ -1794,8 +1400,6 @@ module.exports = {
           type: "vocabs",
           meaning: "no",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/198-iie.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "くるま",
@@ -1803,8 +1407,6 @@ module.exports = {
           type: "vocabs",
           meaning: "car",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/199-kuruma.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
         {
           character: "でんしゃ",
@@ -1812,8 +1414,6 @@ module.exports = {
           type: "vocabs",
           meaning: "train",
           audio_url: "gs://waifu-3b5e3.appspot.com/audio-url/200-densha.mp3",
-          created_at: new Date(),
-          updated_at: new Date(),
         },
       ],
       {}
