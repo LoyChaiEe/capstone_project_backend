@@ -7,7 +7,12 @@ module.exports = (sequelize, DataTypes) => {
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
-    //Asscoiation will be added later
+    //Asscoiation
+    static associate(models) {
+      this.belongsToMany(models.question, { through: "answer" });
+      this.belongsToMany(models.lesson, { through: "lessonWord" });
+      this.belongsToMany(models.user, { through: "userWordbank" });
+    }
   }
   Character.init(
     {
