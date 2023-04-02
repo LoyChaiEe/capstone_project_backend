@@ -13,7 +13,7 @@ module.exports = {
      * }], {});
     */
    await queryInterface.bulkInsert(
-     "usersWordbanks",
+     "user_wordbanks",
      [
        {
          user_id: 1,
@@ -603,6 +603,6 @@ module.exports = {
      * Example:
      * await queryInterface.bulkDelete('People', null, {});
      */
-    await queryInterface.bulkDelete('usersWordbanks', null, {});
+    await queryInterface.bulkDelete("user_wordbanks", null, {});
   }
 };

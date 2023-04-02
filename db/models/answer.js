@@ -13,7 +13,6 @@ module.exports = (sequelize, DataTypes) => {
       // to enable them to query junction model
       this.belongsTo(models.question);
       this.belongsTo(models.character);
-      this.belongsToMany(models.lesson, { through: "lessonQuestion" });
     }
   }
   Answer.init(

@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
       // Define separate 1-M relationships with both Person and Personality models
       // to enable them to query junction model
       this.belongsTo(models.lesson);
-      this.belongsTo(models.answer);
+      this.belongsTo(models.question);
     }
   }
   LessonQuestion.init(
@@ -21,9 +21,9 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
         references: { model: "lesson", key: "id" },
       },
-      answer_id: {
+      question_id: {
         type: DataTypes.INTEGER,
-        references: { model: "answer", key: "id" },
+        references: { model: "question", key: "id" },
       },
       difficulty: {
         type: DataTypes.STRING,

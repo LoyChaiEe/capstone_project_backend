@@ -9,30 +9,34 @@ module.exports = {
      * Example:
      * await queryInterface.createTable('users', { id: Sequelize.INTEGER });
      */
-    await queryInterface.createTable("lessonsQuestions", {
+    await queryInterface.createTable("user_wordbanks", {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      lesson_id: {
+      user_id: {
         type: Sequelize.INTEGER,
         references: {
-          model: "lessons",
+          model: "users",
           key: "id",
         },
       },
-      answer_id: {
+      character_id: {
         type: Sequelize.INTEGER,
         references: {
-          model: "answers",
+          model: "characters",
           key: "id",
         },
       },
-      difficulty: {
-        type: Sequelize.STRING,
+      created_at: {
         allowNull: false,
+        type: Sequelize.DATE,
+      },
+      updated_at: {
+        allowNull: false,
+        type: Sequelize.DATE,
       },
     });
   },
@@ -42,8 +46,8 @@ module.exports = {
      * Add reverting commands here.
      *
      * Example:
-     * await queryInterface.dropTable('users');
+     * await queryInterface.dropTable('usersWordbank');
      */
-    await queryInterface.dropTable("lessonsQuestions");
+    await queryInterface.dropTable("user_wordbanks");
   }
 };

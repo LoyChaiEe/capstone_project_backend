@@ -9,9 +9,9 @@ module.exports = (sequelize, DataTypes) => {
      */
     //Asscoiation
     static associate(models) {
-      this.belongsToMany(models.answer, { through: "lessonQuestion" });
       this.belongsToMany(models.character, { through: "lessonWord" });
       this.belongsToMany(models.user, { through: "userLesson" });
+      this.belongsToMany(models.question, { through: "lessonQuestion" });
     }
   }
   Lesson.init(
