@@ -9,6 +9,28 @@ module.exports = {
      * Example:
      * await queryInterface.createTable('users', { id: Sequelize.INTEGER });
      */
+    await queryInterface.createTable(
+      "questions",
+      {
+        id: {
+          allowNull: false,
+          autoIncrement: true,
+          primaryKey: true,
+          type: Sequelize.INTEGER,
+        },
+        character: {
+          type: Sequelize.TEXT,
+          allowNull: false,
+        },
+        type: {
+          type: Sequelize.TEXT,
+          allowNull: false,
+        },
+      },
+      {
+        charset: "utf8", // Set the character set to UTF-8 for japanese characters
+        collate: "utf8_general_ci", // Set the collation to UTF-8 general case insensitive
+      })
   },
 
   async down (queryInterface, Sequelize) {
@@ -18,5 +40,6 @@ module.exports = {
      * Example:
      * await queryInterface.dropTable('users');
      */
+    await queryInterface.dropTable("questions");
   }
 };

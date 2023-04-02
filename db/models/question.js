@@ -25,6 +25,7 @@ module.exports = (sequelize, DataTypes) => {
       sequelize,
       modelName: "question",
       underscored: true,
+      timestamps: false,
     }
   );
   return Character;
