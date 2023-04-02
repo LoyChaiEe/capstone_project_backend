@@ -25,7 +25,7 @@ const checkJwt = auth({
   audience: `${audience}`,
   issuerBaseURL: `${domain}`,
 });
-console.log(character)
+
 const PORT = process.env.PORT;
 const app = express();
 
