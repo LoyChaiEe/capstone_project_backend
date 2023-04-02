@@ -17,195 +17,195 @@ module.exports = {
      [
        {
          lesson_id: 1,
-         word_id: 143,
+         character_id: 143,
        },
        {
          lesson_id: 1,
-         word_id: 189,
+         character_id: 189,
        },
        {
          lesson_id: 1,
-         word_id: 144,
+         character_id: 144,
        },
        {
          lesson_id: 1,
-         word_id: 145,
+         character_id: 145,
        },
        {
          lesson_id: 1,
-         word_id: 190,
+         character_id: 190,
        },
        {
          lesson_id: 1,
-         word_id: 155,
+         character_id: 155,
        },
        {
          lesson_id: 1,
-         word_id: 175,
+         character_id: 175,
        },
        {
          lesson_id: 1,
-         word_id: 188,
+         character_id: 188,
        },
        {
          lesson_id: 1,
-         word_id: 170,
+         character_id: 170,
        },
        {
          lesson_id: 1,
-         word_id: 151,
+         character_id: 151,
        },
        {
          lesson_id: 1,
-         word_id: 161,
+         character_id: 161,
        },
        {
          lesson_id: 1,
-         word_id: 174,
+         character_id: 174,
        },
        {
          lesson_id: 1,
-         word_id: 163,
+         character_id: 163,
        },
        {
          lesson_id: 1,
-         word_id: 160,
+         character_id: 160,
        },
        {
          lesson_id: 1,
-         word_id: 193,
+         character_id: 193,
        },
        {
          lesson_id: 1,
-         word_id: 165,
+         character_id: 165,
        },
        {
          lesson_id: 11,
-         word_id: 1,
+         character_id: 1,
        },
        {
          lesson_id: 11,
-         word_id: 2,
+         character_id: 2,
        },
        {
          lesson_id: 11,
-         word_id: 3,
+         character_id: 3,
        },
        {
          lesson_id: 11,
-         word_id: 4,
+         character_id: 4,
        },
        {
          lesson_id: 11,
-         word_id: 5,
+         character_id: 5,
        },
        {
          lesson_id: 11,
-         word_id: 6,
+         character_id: 6,
        },
        {
          lesson_id: 11,
-         word_id: 7,
+         character_id: 7,
        },
        {
          lesson_id: 11,
-         word_id: 8,
+         character_id: 8,
        },
        {
          lesson_id: 11,
-         word_id: 13,
+         character_id: 13,
        },
        {
          lesson_id: 11,
-         word_id: 12,
+         character_id: 12,
        },
        {
          lesson_id: 11,
-         word_id: 46,
+         character_id: 46,
        },
        {
          lesson_id: 11,
-         word_id: 17,
+         character_id: 17,
        },
        {
          lesson_id: 11,
-         word_id: 22,
+         character_id: 22,
        },
        {
          lesson_id: 11,
-         word_id: 32,
+         character_id: 32,
        },
        {
          lesson_id: 11,
-         word_id: 15,
+         character_id: 15,
        },
        {
          lesson_id: 11,
-         word_id: 16,
+         character_id: 16,
        },
        {
          lesson_id: 21,
-         word_id: 72,
+         character_id: 72,
        },
        {
          lesson_id: 21,
-         word_id: 73,
+         character_id: 73,
        },
        {
          lesson_id: 21,
-         word_id: 74,
+         character_id: 74,
        },
        {
          lesson_id: 21,
-         word_id: 75,
+         character_id: 75,
        },
        {
          lesson_id: 21,
-         word_id: 76,
+         character_id: 76,
        },
        {
          lesson_id: 21,
-         word_id: 77,
+         character_id: 77,
        },
        {
          lesson_id: 21,
-         word_id: 78,
+         character_id: 78,
        },
        {
          lesson_id: 21,
-         word_id: 79,
+         character_id: 79,
        },
        {
          lesson_id: 21,
-         word_id: 84,
+         character_id: 84,
        },
        {
          lesson_id: 21,
-         word_id: 83,
+         character_id: 83,
        },
        {
          lesson_id: 21,
-         word_id: 117,
+         character_id: 117,
        },
        {
          lesson_id: 21,
-         word_id: 88,
+         character_id: 88,
        },
        {
          lesson_id: 21,
-         word_id: 93,
+         character_id: 93,
        },
        {
          lesson_id: 21,
-         word_id: 103,
+         character_id: 103,
        },
        {
          lesson_id: 21,
-         word_id: 86,
+         character_id: 86,
        },
        {
          lesson_id: 21,
-         word_id: 87,
+         character_id: 87,
        },
      ],
      {}
