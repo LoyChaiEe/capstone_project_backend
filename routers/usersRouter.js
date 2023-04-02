@@ -8,8 +8,12 @@ class UsersRouter {
   routes() {
     //Insert routes and controller's api calls here
     router.get("/", this.controller.getAll.bind(this.controller));
-    router.get("/:email", this.controller.getOne.bind(this.controller));
+    router.get("/:userEmail", this.controller.getOne.bind(this.controller));
     router.post("/newUser", this.controller.addOne.bind(this.controller));
+    router.put(
+      "/photoUrl",
+      this.controller.updatePhotoURL.bind(this.controller)
+    );
     return router;
   }
 }
