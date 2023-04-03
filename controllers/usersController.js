@@ -58,6 +58,26 @@ class UserController extends BaseController {
       return res.status(400).json({ error: true, msg: err });
     }
   }
+  // update profile
+  async updateProfile(req, res) {
+    const { first_name, last_name, username, email_address, country } =
+      req.body;
+    try {
+      const user = await this.model.findOne({
+        where: { email_address: email_address },
+      });
+      user.first_name = first_name;
+      user.last_name = last_name;
+      user.username = username;
+      user.country = country;
+      await user.save({
+        fields: ["first_name", "last_name", "username", "country"],
+      });
+      return res.json(user);
+    } catch (err) {
+      return res.status(400).json({ error: true, msg: err });
+    }
+  }
 }
 
 module.exports = UserController;

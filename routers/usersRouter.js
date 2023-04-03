@@ -14,6 +14,7 @@ class UsersRouter {
       "/photoUrl",
       this.controller.updatePhotoURL.bind(this.controller)
     );
+    router.put("/profile", this.controller.updateProfile.bind(this.controller));
     return router;
   }
 }
