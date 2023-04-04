@@ -51,7 +51,7 @@ const characterRouter = new CharactersRouter(charactersController).routes();
 const testRouter = new TestRouter(testController).routes();
 // routers
 app.use("/users", userRouter);
-app.use("/words", characterRouter);
+app.use("/characters", characterRouter);
 app.use("/tests", testRouter);
 
 app.listen(process.env.PORT, () => {
