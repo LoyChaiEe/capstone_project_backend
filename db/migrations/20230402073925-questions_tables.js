@@ -8,10 +8,9 @@ module.exports = {
      *
      * Example:
      * await queryInterface.createTable('users', { id: Sequelize.INTEGER });
-     * 
      */
     await queryInterface.createTable(
-      "characters",
+      "questions",
       {
         id: {
           allowNull: false,
@@ -19,7 +18,7 @@ module.exports = {
           primaryKey: true,
           type: Sequelize.INTEGER,
         },
-        character: {
+        question: {
           type: Sequelize.TEXT,
           allowNull: false,
         },
@@ -27,32 +26,11 @@ module.exports = {
           type: Sequelize.TEXT,
           allowNull: false,
         },
-        pronounciation: {
-          type: Sequelize.TEXT,
-          allowNull: false,
-        },
-        meaning: {
-          type: Sequelize.TEXT,
-          allowNull: true, //hiragana and katakana has no meaning
-        },
-        audio_url: {
-          type: Sequelize.STRING,
-          allowNull: false,
-        },
-        created_at: {
-          allowNull: false,
-          type: Sequelize.DATE,
-        },
-        updated_at: {
-          allowNull: false,
-          type: Sequelize.DATE,
-        },
       },
       {
-        charset: "utf8", // Set the character set to UTF-8
+        charset: "utf8", // Set the character set to UTF-8 for japanese characters
         collate: "utf8_general_ci", // Set the collation to UTF-8 general case insensitive
-      }
-    );
+      })
   },
 
   async down (queryInterface, Sequelize) {
@@ -62,6 +40,6 @@ module.exports = {
      * Example:
      * await queryInterface.dropTable('users');
      */
-    await queryInterface.dropTable("characters");
+    await queryInterface.dropTable("questions");
   }
 };
