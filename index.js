@@ -2,11 +2,8 @@
 const cors = require("cors");
 const express = require("express");
 require("dotenv").config();
-const http = require("http");
-// Socket need ask nick, cause I just cop and paste
-const { Server } = require("socket.io");
+
 const { auth } = require("express-oauth2-jwt-bearer");
-//Auth0 domain, I do not have the details, but Nick has it
 const domain = process.env.AUTH0_DOMAIN;
 const audience = process.env.AUTH0_AUDIENCE;
 
@@ -27,7 +24,6 @@ const checkJwt = auth({
   audience: `${audience}`,
   issuerBaseURL: `${domain}`,
 });
-
 const PORT = process.env.PORT;
 const app = express();
 
@@ -58,13 +54,6 @@ app.use("/users", userRouter);
 app.use("/words", characterRouter);
 app.use("/tests", testRouter);
 
-const server = http.createServer(app);
-const io = new Server(server, {
-  cors: {
-    origin: "http://localhost:3001",
-  },
-});
-
-server.listen(process.env.PORT, () => {
+app.listen(process.env.PORT, () => {
   console.log(`Express app listening on port ${PORT}!`);
 });

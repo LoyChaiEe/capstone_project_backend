@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/LoyChaiEe/capstone_project_backend#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-oauth2-jwt-bearer": "^1.3.0",
