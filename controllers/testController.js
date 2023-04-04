@@ -23,7 +23,6 @@ class TestController extends BaseController {
     this.question = question;
     this.userLesson = userLesson;
     this.userWordbank = userWordbank;
-    console.log(lessonQuestion);
   }
   //Insert your controller's function here
 }
