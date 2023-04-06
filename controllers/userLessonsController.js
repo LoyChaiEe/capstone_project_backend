@@ -9,11 +9,42 @@ class UserLessonsController extends BaseController {
     this.lesson = lesson;
   }
   //Insert your controller's function here
-  async getUserProgress(req, res){
-    const { id:userID }= req.params
+  async getUserProgressHiragana(req, res) {
+    const { id: userID } = req.params;
     try {
       const userProgress = await this.model.findAll({
-        include: [{model: this.user, where:{id: userID}}, {model: this.lesson}]
+        include: [
+          { model: this.user, where: { id: userID } },
+          { model: this.lesson, where: { type: "hiragana"} },
+        ],
+      });
+      return res.json(userProgress);
+    } catch (err) {
+      return res.status(400).json({ error: true, msg: err });
+    }
+  }
+  async getUserProgressKatakana(req, res) {
+    const { id: userID } = req.params;
+    try {
+      const userProgress = await this.model.findAll({
+        include: [
+          { model: this.user, where: { id: userID } },
+          { model: this.lesson, where: { type: "katakana"} },
+        ],
+      });
+      return res.json(userProgress);
+    } catch (err) {
+      return res.status(400).json({ error: true, msg: err });
+    }
+  }
+  async getUserProgressVocab(req, res) {
+    const { id: userID } = req.params;
+    try {
+      const userProgress = await this.model.findAll({
+        include: [
+          { model: this.user, where: { id: userID } },
+          { model: this.lesson, where: { type: "vocabs" } },
+        ],
       });
       return res.json(userProgress);
     } catch (err) {

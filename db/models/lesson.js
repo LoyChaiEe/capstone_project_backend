@@ -12,6 +12,8 @@ module.exports = (sequelize, DataTypes) => {
       this.belongsToMany(models.character, { through: "lessonWord" });
       this.belongsToMany(models.user, { through: "userLesson" });
       this.belongsToMany(models.question, { through: "lessonQuestion" });
+      this.belongsToMany(models.question, { through: "LQA" })
+      this.belongsToMany(models.character, { through: "LQA" });
     }
   }
   Lesson.init(
