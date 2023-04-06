@@ -14,11 +14,13 @@ const { user, character, answer, lesson, lessonQuestion, lessonWord, question, u
 const UsersRouter = require("./routers/usersRouter");
 const CharactersRouter = require("./routers/charactersRouter");
 const UserLessonsRouter = require("./routers/userLessonRouter")
+const UserWordbanksRouter = require("./routers/userWordbanksRouter");
 const TestRouter = require("./routers/testRouter")
 // Controllers
 const UsersController = require("./controllers/usersController");
 const CharactersController = require("./controllers/charactersController");
 const UserLessonsController = require("./controllers/userLessonsController")
+const UserWordbanksController = require("./controllers/userWordbanksController")
 const TestController = require("./controllers/testController");
 
 //Authorization middleware
@@ -37,6 +39,7 @@ app.use(express.json());
 const usersController = new UsersController(user);
 const charactersController = new CharactersController(character)
 const userLessonsController = new UserLessonsController(userLesson, user, lesson);
+const userWordbanksController = new UserWordbanksController(userWordbank, user, character);
 const testController = new TestController(
   user,
   character,
@@ -51,12 +54,14 @@ const testController = new TestController(
 // initializing routers
 const userRouter = new UsersRouter(usersController).routes();
 const characterRouter = new CharactersRouter(charactersController).routes();
+const userWordbanksRouter = new UserWordbanksRouter(userWordbanksController).routes();
 const userLessonsRouter = new UserLessonsRouter(userLessonsController).routes();
 const testRouter = new TestRouter(testController).routes();
 // routers
 app.use("/users", userRouter);
 app.use("/characters", characterRouter);
 app.use("/userLesson", userLessonsRouter);
+app.use("/userWordbank", userWordbanksRouter);
 app.use("/tests", testRouter);
 
 app.listen(process.env.PORT, () => {
