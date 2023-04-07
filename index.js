@@ -8,7 +8,18 @@ const domain = process.env.AUTH0_DOMAIN;
 const audience = process.env.AUTH0_AUDIENCE;
 
 const db = require("./db/models/index");
-const { user, character, answer, lesson, lessonQuestion, lessonWord, question, userLesson, userWordbank, LQA } = db
+const {
+  user,
+  character,
+  answer,
+  lesson,
+  lessonQuestion,
+  lessonWord,
+  question,
+  userLesson,
+  userWordbank,
+  lesson_question_answer,
+} = db;
 
 // Routers
 const UsersRouter = require("./routers/usersRouter");
@@ -42,7 +53,12 @@ const usersController = new UsersController(user);
 const charactersController = new CharactersController(character)
 const userLessonsController = new UserLessonsController(userLesson, user, lesson);
 const userWordbanksController = new UserWordbanksController(userWordbank, user, character);
-const lessonQuestionsController= new LQAController(LQA, lesson, question, character);
+const lessonQuestionsController = new LQAController(
+  lesson_question_answer,
+  lesson,
+  question,
+  character
+);
 const testController = new TestController(
   user,
   character,

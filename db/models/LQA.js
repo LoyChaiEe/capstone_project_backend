@@ -21,15 +21,21 @@ module.exports = (sequelize, DataTypes) => {
       lesson_id: {
         type: DataTypes.INTEGER,
         references: { model: "lesson", key: "id" },
+        unique: false,
+        constraints: false,
       },
       question_id: {
         type: DataTypes.INTEGER,
         references: { model: "question", key: "id" },
+        unique: false,
+        constraints: false,
       },
 
       character_id: {
         type: DataTypes.INTEGER,
         references: { model: "character", key: "id" },
+        unique: false,
+        constraints: false,
       },
       difficulty: {
         type: DataTypes.STRING,
@@ -42,7 +48,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     {
       sequelize,
-      modelName: "LQA",
+      modelName: "lesson_question_answer",
       underscored: true,
       timestamps: false,
     }

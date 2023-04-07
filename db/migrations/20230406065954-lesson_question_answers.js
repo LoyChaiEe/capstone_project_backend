@@ -22,6 +22,7 @@ module.exports = {
           model: "lessons",
           key: "id",
         },
+        unique: false,
         allowNull: false,
       },
       question_id: {
@@ -30,6 +31,7 @@ module.exports = {
           model: "questions",
           key: "id",
         },
+        unique: false,
         allowNull: false,
       },
       character_id: {
@@ -38,16 +40,17 @@ module.exports = {
           model: "characters",
           key: "id",
         },
+        unique: false,
         allowNull: false,
       },
       difficulty: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      audio_disabled:{
+      audio_disabled: {
         type: Sequelize.BOOLEAN,
-        allowNull: false
-      }
+        allowNull: false,
+      },
     });
   },
 
