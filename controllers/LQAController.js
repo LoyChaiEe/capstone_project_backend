@@ -8,7 +8,6 @@ class LQAController extends BaseController {
     this.lesson = lesson;
     this.question = question;
     this.character = character;
-    console.log(model)
   }
   //Insert your controller's function here
   async getLessonQuestionHiragana(req, res) {
