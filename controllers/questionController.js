@@ -3,20 +3,25 @@ class QuestionsController {
   constructor() {}
   //Insert your controller's function here
   async randomInput(req, res) {
-    const { data, num } = req.body;
-    console.log(data,num)
+    const { wordBank, answer, num } = req.body;
+
     try {
       const input = []
       let count = 0
+      answer.map((ele) => {
+        input.push(ele.character);
+      });
+      console.log(input)
       while(count < num){
-        const random = Math.floor(Math.random() * data.length);
-        if (!input.includes(data[random])) {
-          input.push(data[random]);
+        const random = Math.floor(Math.random() * wordBank.length);
+        if (!input.includes(wordBank[random].character)) {
+          input.push(wordBank[random].character);
           count += 1
         }
       }
+      const sortInput = randomSort(input)
       const output = {
-        data: input,
+        data: sortInput,
         msg: "success",
       };
       return res.json(output);
@@ -26,3 +31,7 @@ class QuestionsController {
   }
 }
 module.exports = QuestionsController;
+
+function randomSort(arr) {
+  return arr.slice().sort(() => 0.5 - Math.random());
+}
