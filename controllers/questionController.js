@@ -14,7 +14,7 @@ class QuestionsController {
       console.log(input)
       while(count < num){
         const random = Math.floor(Math.random() * wordBank.length);
-        if (!input.includes(wordBank[random].character)) {
+        if (!input.find(obj => obj.id === wordBank[random].character.id)) {
           input.push(wordBank[random].character);
           count += 1
         }
