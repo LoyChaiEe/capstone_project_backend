@@ -27,6 +27,7 @@ const CharactersRouter = require("./routers/charactersRouter");
 const UserLessonsRouter = require("./routers/userLessonRouter")
 const UserWordbanksRouter = require("./routers/userWordbanksRouter");
 const LQARouter = require("./routers/LQARouter");
+const QuestionsRouter = require("./routers/question")
 const TestRouter = require("./routers/testRouter")
 // Controllers
 const UsersController = require("./controllers/usersController");
@@ -34,6 +35,7 @@ const CharactersController = require("./controllers/charactersController");
 const UserLessonsController = require("./controllers/userLessonsController")
 const UserWordbanksController = require("./controllers/userWordbanksController")
 const LQAController = require("./controllers/LQAController");
+const QuestionsController = require("./controllers/questionController")
 const TestController = require("./controllers/testController");
 
 //Authorization middleware
@@ -59,6 +61,7 @@ const lessonQuestionsController = new LQAController(
   question,
   character
 );
+const questionsController = new QuestionsController()
 const testController = new TestController(
   user,
   character,
@@ -76,6 +79,7 @@ const characterRouter = new CharactersRouter(charactersController).routes();
 const userWordbanksRouter = new UserWordbanksRouter(userWordbanksController).routes();
 const userLessonsRouter = new UserLessonsRouter(userLessonsController).routes();
 const lessonQuestionAnswerRouter = new LQARouter(lessonQuestionsController).routes();
+const questionsRouter = new QuestionsRouter(questionsController).routes()
 const testRouter = new TestRouter(testController).routes();
 // routers
 app.use("/users", userRouter);
@@ -83,6 +87,7 @@ app.use("/characters", characterRouter);
 app.use("/userLesson", userLessonsRouter);
 app.use("/userWordbank", userWordbanksRouter);
 app.use("/LQA", lessonQuestionAnswerRouter);
+app.use("/questions", questionsRouter)
 app.use("/tests", testRouter);
 
 app.listen(process.env.PORT, () => {

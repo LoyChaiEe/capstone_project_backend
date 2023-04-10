@@ -10,7 +10,7 @@ class UserLessonsRouter {
     router.get("/", this.controller.getAll.bind(this.controller));
     router.get("/hiragana/:id", this.controller.getUserProgressHiragana.bind(this.controller));
     router.get("/katakana/:id", this.controller.getUserProgressKatakana.bind(this.controller));
-    router.get("/vocab/:id", this.controller.getUserProgressVocab.bind(this.controller));
+    router.get("/vocabs/:id", this.controller.getUserProgressVocab.bind(this.controller));
     return router;
   }
 }
