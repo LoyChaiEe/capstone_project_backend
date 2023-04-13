@@ -937,7 +937,7 @@ module.exports = {
         },
         {
           character: "ヲ",
-          pronounciation: "o",
+          pronounciation: "wo",
           type: "katakana-basic",
           meaning: "",
           audio_url:
