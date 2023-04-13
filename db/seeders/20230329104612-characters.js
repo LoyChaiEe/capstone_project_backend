@@ -369,7 +369,7 @@ module.exports = {
         },
         {
           character: "を",
-          pronounciation: "o",
+          pronounciation: "wo",
           type: "hiragana-basic",
           meaning: "",
           audio_url:
@@ -937,7 +937,7 @@ module.exports = {
         },
         {
           character: "ヲ",
-          pronounciation: "o",
+          pronounciation: "wo",
           type: "katakana-basic",
           meaning: "",
           audio_url:
