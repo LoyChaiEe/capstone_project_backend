@@ -1,30 +1,75 @@
-class QuestionsController {
-  //model is user model
-  constructor() {}
-  //Insert your controller's function here
-  async randomInput(req, res) {
-    const { wordBank, answer, num } = req.body;
+const { Op, Sequelize, sequelize } = require("sequelize");
+const BaseController = require("./baseController");
 
+class QuestionsController  {
+  //model is user model
+  constructor(character, answer) {
+    this.character = character
+    this.answer = answer
+  }
+  //Insert your controller's function here
+  async randomTranslationInput(req, res) {
+    const { wordBank, type, answer, difficulty } = req.body;
+    const ans = answer.split("、");
+    let num;
+    switch (difficulty) {
+      case "easy":
+        num = 3;
+        break;
+      case "medium":
+        num = 4;
+        break;
+      case "hard":
+        num = 5;
+        break;
+      default:
+        num = 0;
+    }
+    const input = [];
+    const ansData = await this.character.findAll({
+      where: {
+        character: ans,
+        type: { [Op.like]: `%vocabs%` },
+      },
+    });
+    ansData.map(data => input.push(data))
+    console.log(ans);
+    console.log(ansData)
     try {
-      const input = []
-      let count = 0
-      answer.map((ele) => {
-        input.push(ele.character);
-      });
-      console.log(input)
-      while(count < num){
+      let count = 0;
+      console.log(input);
+      while (count < num) {
         const random = Math.floor(Math.random() * wordBank.length);
-        if (!input.find(obj => obj.id === wordBank[random].character.id)) {
+        if (!input.find((obj) => obj.id === wordBank[random].character.id)) {
           input.push(wordBank[random].character);
-          count += 1
+          count += 1;
         }
       }
-      const sortInput = randomSort(input)
+      const sortInput = randomSort(input);
       const output = {
         data: sortInput,
         msg: "success",
       };
-      return res.json(output);
+      return res.json(sortInput);
+    } catch (err) {
+      return res.status(400).json({ error: true, msg: err });
+    }
+  }
+
+  async translationVerify(req,res){
+    const { userInput, questionID ,lessonID } = req.body;
+    try {
+      const answerData = await this.answer.findAll({
+        where: { lesson_id: lessonID, question_id: questionID},
+        include: {model: this.character}
+      })
+      //standardise both user and answer array
+      const answer = answerData.map(data => data.character.character).join('');
+      const input = userInput.map((data) => data.character).join("");
+      console.log(answer)
+      console.log(input)
+
+      return res.json({isCorrect: answer === input? true: false});
     } catch (err) {
       return res.status(400).json({ error: true, msg: err });
     }

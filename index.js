@@ -62,7 +62,7 @@ const lessonQuestionsController = new LQAController(
   character,
   userWordbank
 );
-const questionsController = new QuestionsController()
+const questionsController = new QuestionsController(character, lesson_question_answer);
 const testController = new TestController(
   user,
   character,

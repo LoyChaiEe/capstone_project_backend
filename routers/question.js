@@ -8,10 +8,8 @@ class QuestionsRouter {
   }
   routes() {
     //Insert routes and controller's api calls here
-    router.post(
-      "/random/input",
-      this.controller.randomInput.bind(this.controller)
-    );
+    router.post("/translation/input",this.controller.randomTranslationInput.bind(this.controller));
+    router.post("/translation/verify",this.controller.translationVerify.bind(this.controller));
     return router;
   }
 }

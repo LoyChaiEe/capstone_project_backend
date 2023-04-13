@@ -29,7 +29,7 @@ class LQAController extends BaseController {
       const question_id = questionIDs.map((question) => question.question_id);
       let count = 0;
       const selectedQuestionID = [];
-      while (count < 2) {
+      while (count < 15) {
         const random = Math.floor(Math.random() * question_id.length);
         if (!selectedQuestionID.includes(question_id[random])) {
           selectedQuestionID.push(question_id[random]);
@@ -43,7 +43,7 @@ class LQAController extends BaseController {
       });
       //Re-format data retrieve into the database into a more simplified one to one form
       const questionDatas = []
-      for(let i = 0; i < 2; i++){
+      for(let i = 0; i < 15; i++){
         const questionData = selectedQuestionDatas.filter(question => question.question_id === selectedQuestionID[i])
         const answer = questionData.map((q) => q.character.character).join('、');
         const answer_pronounciation = questionData.map((q) => q.character.pronounciation).join(",");
@@ -52,20 +52,18 @@ class LQAController extends BaseController {
           question_id: questionData[0].question_id,
           lesson_id: questionData[0].lesson_id,
           question: questionData[0].question.question,
+          difficulty: questionData[0].difficulty,
           question_type: questionData[0].question.type,
-          answer: answer.replace(/\s+/g, ""),
+          answer: answer.replace(/\s+/g, ""), //regex to remove whitespace
           answer_pronounciation: answer_pronounciation.replace(/\s+/g, ""),
           meaning: meaning.replace(/\s+/g, ""),
         };
         questionDatas.push(data)
       }
-
       return res.json(questionDatas);
     } catch (err) {
       return res.status(400).json({ error: true, msg: err });
     }
-
-    //generate question answer and input logic here
   }
 }
 module.exports = LQAController;
