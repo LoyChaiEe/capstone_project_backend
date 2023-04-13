@@ -225,6 +225,20 @@ module.exports = {
           created_at: new Date(),
           updated_at: new Date(),
         },
+        {
+          id: 31,
+          user_id: 1,
+          lesson_id: 13,
+          created_at: new Date(),
+          updated_at: new Date(),
+        },
+        {
+          id: 32,
+          user_id: 1,
+          lesson_id: 14,
+          created_at: new Date(),
+          updated_at: new Date(),
+        },
       ],
       {}
     );
