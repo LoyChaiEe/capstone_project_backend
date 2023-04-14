@@ -83,3 +83,29 @@ class TestController extends BaseController {
   }
 }
 module.exports = TestController;
+
+//Re-format data retrieve into the database into a more simplified one to one form
+// const questionDatas = [];
+// for (let i = 0; i < 15; i++) {
+//   const questionData = selectedQuestionDatas.filter(
+//     (question) => question.question_id === selectedQuestionID[i]
+//   );
+//   const answer = questionData
+//     .map((q) => q.character.character)
+//     .join("、");
+//   const answer_pronounciation = questionData
+//     .map((q) => q.character.pronounciation)
+//     .join(",");
+//   const meaning = questionData.map((q) => q.character.meaning).join(",");
+//   const data = {
+//     question_id: questionData[0].question_id,
+//     lesson_id: questionData[0].lesson_id,
+//     question: questionData[0].question.question,
+//     difficulty: questionData[0].difficulty,
+//     question_type: questionData[0].question.type,
+//     answer: answer.replace(/\s+/g, ""), //regex to remove whitespace
+//     answer_pronounciation: answer_pronounciation.replace(/\s+/g, ""),
+//     meaning: meaning.replace(/\s+/g, ""),
+//   };
+//   questionDatas.push(data);
+// }

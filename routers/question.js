@@ -24,6 +24,14 @@ class QuestionsRouter {
       "/meaning/verify",
       this.controller.meaningVerify.bind(this.controller)
     );
+    router.post(
+      "/matching/random",
+      this.controller.randomMatchingInput.bind(this.controller)
+    );
+    router.post(
+      "/matching/verify",
+      this.controller.matchingVerify.bind(this.controller)
+    );
     return router;
   }
 }

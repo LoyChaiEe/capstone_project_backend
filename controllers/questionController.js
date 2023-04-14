@@ -10,7 +10,7 @@ class QuestionsController {
   //Insert your controller's function here
   // TRANSLATION
   async randomTranslationInput(req, res) {
-    const { wordBank, type, answer, difficulty } = req.body;
+    const { wordBank, answer, difficulty } = req.body;
     const ans = answer.split("、");
     let num;
     switch (difficulty) {
@@ -27,15 +27,18 @@ class QuestionsController {
         num = 0;
     }
     const input = [];
+    //This is find the data about the correct ans
     const ansData = await this.character.findAll({
       where: {
         character: ans,
         type: { [Op.like]: `%vocabs%` },
       },
     });
+    //push the correct ans as part of the input
     ansData.map((data) => input.push(data));
     console.log(ans);
     console.log(ansData);
+    //This is to generate the remaining incorrect input
     try {
       let count = 0;
       console.log(input);
@@ -47,10 +50,6 @@ class QuestionsController {
         }
       }
       const sortInput = randomSort(input);
-      const output = {
-        data: sortInput,
-        msg: "success",
-      };
       return res.json(sortInput);
     } catch (err) {
       return res.status(400).json({ error: true, msg: err });
@@ -129,6 +128,70 @@ class QuestionsController {
       console.log("MEANING VERIFY INPUT", input);
 
       return res.json({ isCorrect: answer === input ? true : false });
+    } catch (err) {
+      return res.status(400).json({ error: true, msg: err });
+    }
+  }
+
+  async randomMatchingInput(req, res) {
+    const { questionData } = req.body;
+    const type = questionData.question_type.split("-");
+    try {
+      //Set input rows
+      const character = questionData.answer.split("、");
+      const pronounciation = questionData.answer_pronounciation.split(",");
+      const meaning = questionData.meaning.split(",");
+      let input;
+      let output;
+      //Vocabs input and output
+      if (type[1] === "character") {
+        input = character;
+        //if vocabs set meaning as vocabs, else set pronounciation (cause there is only either vocabs or hiragana/katakana)
+        if (type[2] === "vocabs") {
+          output = meaning;
+        } else {
+          output = pronounciation;
+        }
+      }
+      //Hiragana/katakana input and output
+      else {
+        output = character;
+        if (type[2] === "vocabs") {
+          input = meaning;
+        } else {
+          input = pronounciation;
+        }
+      }
+      return res.json({
+        inputRow: randomSort(input),
+        outputRow: randomSort(output),
+      });
+    } catch (err) {
+      return res.status(400).json({ error: true, msg: err });
+    }
+  }
+
+  async matchingVerify(req, res) {
+    const { left, right, type } = req.body;
+    const output = { isCorrect: false };
+    try {
+      const data = await this.character.findOne({
+        where: { character: type[1] === "character" ? left : right },
+      });
+      if (type[1] === "character") {
+        if (type[2] === "vocabs") {
+          output.isCorrect = data.meaning === right;
+        } else {
+          output.isCorrect = data.pronounciation === right;
+        }
+      } else {
+        if (type[2] === "vocabs") {
+          output.isCorrect = data.meaning === left;
+        } else {
+          output.isCorrect = data.pronounciation === left;
+        }
+      }
+      return res.json(output);
     } catch (err) {
       return res.status(400).json({ error: true, msg: err });
     }
