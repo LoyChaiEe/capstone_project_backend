@@ -13,7 +13,7 @@ class QuestionsRouter {
     router.post("/matching/random",this.controller.randomMatchingInput.bind(this.controller));
     router.post("/matching/verify",this.controller.matchingVerify.bind(this.controller));
     router.post("/recognition/input",this.controller.randomRecognitionInput.bind(this.controller));
-    //router.post("/recognition/verify",this.controller.recognitionVerify.bind(this.controller));
+    router.post("/recognition/verify",this.controller.recognitionVerify.bind(this.controller));
     return router;
   }
 }

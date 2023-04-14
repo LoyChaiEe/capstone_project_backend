@@ -159,6 +159,24 @@ class QuestionsController {
       return res.status(400).json({ error: true, msg: err });
     }
   }
+
+  async recognitionVerify(req,res){
+    const { answer, userAnswer } = req.body;
+    try {
+      const type = answer.question_type.split("-")
+      let ans
+      if(type[1] === "characters"){
+        ans = answer.answer.split("、").join("");
+      }else{
+        ans = answer.answer_pronounciation.split(",").join("");
+      }
+      console.log(ans)
+      console.log(userAnswer)
+      return res.json({isCorrect: userAnswer === ans});
+    } catch (err) {
+      return res.status(400).json({ error: true, msg: err });
+    }
+  }
 }
 module.exports = QuestionsController;
 
