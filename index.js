@@ -72,7 +72,8 @@ const testController = new TestController(
   lessonWord,
   question,
   userLesson,
-  userWordbank
+  userWordbank,
+  lesson_question_answer
 );
 // initializing routers
 const userRouter = new UsersRouter(usersController).routes();
