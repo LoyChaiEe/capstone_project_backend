@@ -27,7 +27,7 @@ const CharactersRouter = require("./routers/charactersRouter");
 const UserLessonsRouter = require("./routers/userLessonRouter");
 const UserWordbanksRouter = require("./routers/userWordbanksRouter");
 const LQARouter = require("./routers/LQARouter");
-const QuestionsRouter = require("./routers/question");
+const QuestionsRouter = require("./routers/questionRouter");
 const TestRouter = require("./routers/testRouter");
 // Controllers
 const UsersController = require("./controllers/usersController");

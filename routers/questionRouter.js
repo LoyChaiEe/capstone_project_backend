@@ -17,8 +17,8 @@ class QuestionsRouter {
       this.controller.translationVerify.bind(this.controller)
     );
     router.post(
-      "/meaning/input",
-      this.controller.randomMeaningInput.bind(this.controller)
+      "/meaning/words",
+      this.controller.randomMeaningWords.bind(this.controller)
     );
     router.post(
       "/meaning/verify",

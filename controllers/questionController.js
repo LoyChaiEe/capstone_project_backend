@@ -78,7 +78,7 @@ class QuestionsController {
   }
 
   // MEANING
-  async randomMeaningInput(req, res) {
+  async randomMeaningWords(req, res) {
     const { wordBank, type, answer, difficulty } = req.body;
     const ans = answer.split("、");
 
@@ -93,7 +93,6 @@ class QuestionsController {
     // generate remaining incorrect input
     try {
       let count = 0;
-      console.log("RANDOM MEANING INPUT", input);
       while (count < 3) {
         const random = Math.floor(Math.random() * wordBank.length);
         if (!input.find((obj) => obj.id === wordBank[random].character.id)) {
@@ -119,15 +118,18 @@ class QuestionsController {
         where: { lesson_id: lessonID, question_id: questionID },
         include: { model: this.character },
       });
-      //standardise both user and answer array
-      const answer = answerData
-        .map((data) => data.character.character)
-        .join("");
-      const input = userInput.map((data) => data.character).join("");
-      console.log("MEANING ANSWER", answer);
-      console.log("MEANING VERIFY INPUT", input);
-
-      return res.json({ isCorrect: answer === input ? true : false });
+      const answerCharacter = answerData.map(
+        (data) => data.character.character
+      );
+      const answerMeaning = answerData
+        .map((data) => data.character.meaning)
+        .join(""); // to make array into string
+      return res.json({
+        isCorrect:
+          answerCharacter === userInput || answerMeaning === userInput
+            ? true
+            : false,
+      });
     } catch (err) {
       return res.status(400).json({ error: true, msg: err });
     }
