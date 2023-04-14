@@ -7,7 +7,11 @@ class TestRouter {
   }
   routes() {
     //Insert routes and controller's api calls here
-    
+    router.get(
+      "/questions/get/:lesson_id",
+      this.controller.getQuestionID.bind(this.controller)
+    );
+
     return router;
   }
 }

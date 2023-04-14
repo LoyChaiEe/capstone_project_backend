@@ -1,13 +1,14 @@
 const { Op, Sequelize, sequelize } = require("sequelize");
 const BaseController = require("./baseController");
 
-class QuestionsController  {
+class QuestionsController {
   //model is user model
   constructor(character, answer) {
-    this.character = character
-    this.answer = answer
+    this.character = character;
+    this.answer = answer;
   }
   //Insert your controller's function here
+  // TRANSLATION
   async randomTranslationInput(req, res) {
     const { wordBank, type, answer, difficulty } = req.body;
     const ans = answer.split("、");
@@ -32,9 +33,9 @@ class QuestionsController  {
         type: { [Op.like]: `%vocabs%` },
       },
     });
-    ansData.map(data => input.push(data))
+    ansData.map((data) => input.push(data));
     console.log(ans);
-    console.log(ansData)
+    console.log(ansData);
     try {
       let count = 0;
       console.log(input);
@@ -56,20 +57,78 @@ class QuestionsController  {
     }
   }
 
-  async translationVerify(req,res){
-    const { userInput, questionID ,lessonID } = req.body;
+  async translationVerify(req, res) {
+    const { userInput, questionID, lessonID } = req.body;
     try {
       const answerData = await this.answer.findAll({
-        where: { lesson_id: lessonID, question_id: questionID},
-        include: {model: this.character}
-      })
+        where: { lesson_id: lessonID, question_id: questionID },
+        include: { model: this.character },
+      });
       //standardise both user and answer array
-      const answer = answerData.map(data => data.character.character).join('');
+      const answer = answerData
+        .map((data) => data.character.character)
+        .join("");
       const input = userInput.map((data) => data.character).join("");
-      console.log(answer)
-      console.log(input)
+      console.log(answer);
+      console.log(input);
 
-      return res.json({isCorrect: answer === input? true: false});
+      return res.json({ isCorrect: answer === input ? true : false });
+    } catch (err) {
+      return res.status(400).json({ error: true, msg: err });
+    }
+  }
+
+  // MEANING
+  async randomMeaningInput(req, res) {
+    const { wordBank, type, answer, difficulty } = req.body;
+    const ans = answer.split("、");
+
+    const input = [];
+    const ansData = await this.character.findAll({
+      where: {
+        character: ans,
+        type: { [Op.like]: `%vocabs%` },
+      },
+    });
+    ansData.map((data) => input.push(data));
+    // generate remaining incorrect input
+    try {
+      let count = 0;
+      console.log("RANDOM MEANING INPUT", input);
+      while (count < 3) {
+        const random = Math.floor(Math.random() * wordBank.length);
+        if (!input.find((obj) => obj.id === wordBank[random].character.id)) {
+          input.push(wordBank[random].character);
+          count += 1;
+        }
+      }
+      const sortInput = randomSort(input);
+      const output = {
+        data: sortInput,
+        msg: "success",
+      };
+      return res.json(sortInput);
+    } catch (err) {
+      return res.status(400).json({ error: true, msg: err });
+    }
+  }
+
+  async meaningVerify(req, res) {
+    const { userInput, questionID, lessonID } = req.body;
+    try {
+      const answerData = await this.answer.findAll({
+        where: { lesson_id: lessonID, question_id: questionID },
+        include: { model: this.character },
+      });
+      //standardise both user and answer array
+      const answer = answerData
+        .map((data) => data.character.character)
+        .join("");
+      const input = userInput.map((data) => data.character).join("");
+      console.log("MEANING ANSWER", answer);
+      console.log("MEANING VERIFY INPUT", input);
+
+      return res.json({ isCorrect: answer === input ? true : false });
     } catch (err) {
       return res.status(400).json({ error: true, msg: err });
     }
