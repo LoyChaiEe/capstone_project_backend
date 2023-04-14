@@ -114,6 +114,33 @@ class QuestionsController {
       return res.status(400).json({ error: true, msg: err });
     }
   }
+
+  async matchingVerify(req, res) {
+    const { left, right, type } = req.body;
+    const output = {isCorrect: false}
+    try{
+      const data = await this.character.findOne({
+        where: {character: type[1] === "character" ? left : right}
+      })
+      if(type[1] === "character"){
+        if(type[2] === "vocabs"){
+          output.isCorrect = data.meaning === right
+        }
+        else{
+          output.isCorrect = data.pronounciation === right
+        }
+      }else{
+        if (type[2] === "vocabs") {
+          output.isCorrect = data.meaning === left;
+        } else {
+          output.isCorrect = data.pronounciation === left;
+        }
+      }
+      return res.json(output)
+    }catch(err){
+      return res.status(400).json({ error: true, msg: err });
+    }
+  }
 }
 module.exports = QuestionsController;
 
