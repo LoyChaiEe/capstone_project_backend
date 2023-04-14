@@ -9,7 +9,7 @@ class QuestionsController {
   }
   //Insert your controller's function here
   async randomTranslationInput(req, res) {
-    const { wordBank, type, answer, difficulty } = req.body;
+    const { wordBank, answer, difficulty } = req.body;
     const ans = answer.split("、");
     let num;
     switch (difficulty) {
@@ -26,15 +26,18 @@ class QuestionsController {
         num = 0;
     }
     const input = [];
+    //This is find the data about the correct ans
     const ansData = await this.character.findAll({
       where: {
         character: ans,
         type: { [Op.like]: `%vocabs%` },
       },
     });
+    //push the correct ans as part of the input
     ansData.map((data) => input.push(data));
     console.log(ans);
     console.log(ansData);
+    //This is to generate the remaining incorrect input
     try {
       let count = 0;
       console.log(input);
@@ -46,10 +49,6 @@ class QuestionsController {
         }
       }
       const sortInput = randomSort(input);
-      const output = {
-        data: sortInput,
-        msg: "success",
-      };
       return res.json(sortInput);
     } catch (err) {
       return res.status(400).json({ error: true, msg: err });
