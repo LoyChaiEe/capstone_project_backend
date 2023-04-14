@@ -44,7 +44,7 @@ class TestController extends BaseController {
       const uniqueQuestionIds = {};
       const questionIDs = [];
       for (let i = 0; i < matchingData.length; i++) {
-        const questionId = matchingData[matchingData.length-1-i].question_id;
+        const questionId = matchingData[i].question_id;
         if (!uniqueQuestionIds[questionId]) {
           uniqueQuestionIds[questionId] = true;
           questionIDs.push(questionId);

@@ -39,7 +39,7 @@ class UserWordbanksController extends BaseController {
           },
         ],
       });
-      return res.json(userKatakan);
+      return res.json(userKatakana);
     } catch (err) {
       return res.status(400).json({ error: true, msg: err });
     }
