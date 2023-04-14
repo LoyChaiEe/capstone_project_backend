@@ -8,6 +8,7 @@ class QuestionsController {
     this.answer = answer;
   }
   //Insert your controller's function here
+  // TRANSLATION
   async randomTranslationInput(req, res) {
     const { wordBank, answer, difficulty } = req.body;
     const ans = answer.split("、");
@@ -72,6 +73,64 @@ class QuestionsController {
     }
   }
 
+  // MEANING
+  async randomMeaningWords(req, res) {
+    const { wordBank, type, answer, difficulty } = req.body;
+    const ans = answer.split("、");
+
+    const input = [];
+    const ansData = await this.character.findAll({
+      where: {
+        character: ans,
+        type: { [Op.like]: `%vocabs%` },
+      },
+    });
+    ansData.map((data) => input.push(data));
+    // generate remaining incorrect input
+    try {
+      let count = 0;
+      while (count < 3) {
+        const random = Math.floor(Math.random() * wordBank.length);
+        if (!input.find((obj) => obj.id === wordBank[random].character.id)) {
+          input.push(wordBank[random].character);
+          count += 1;
+        }
+      }
+      const sortInput = randomSort(input);
+      const output = {
+        data: sortInput,
+        msg: "success",
+      };
+      return res.json(sortInput);
+    } catch (err) {
+      return res.status(400).json({ error: true, msg: err });
+    }
+  }
+
+  async meaningVerify(req, res) {
+    const { userInput, questionID, lessonID } = req.body;
+    try {
+      const answerData = await this.answer.findAll({
+        where: { lesson_id: lessonID, question_id: questionID },
+        include: { model: this.character },
+      });
+      const answerCharacter = answerData.map(
+        (data) => data.character.character
+      );
+      const answerMeaning = answerData
+        .map((data) => data.character.meaning)
+        .join(""); // to make array into string
+      return res.json({
+        isCorrect:
+          answerCharacter === userInput || answerMeaning === userInput
+            ? true
+            : false,
+      });
+    } catch (err) {
+      return res.status(400).json({ error: true, msg: err });
+    }
+  }
+
   async randomMatchingInput(req, res) {
     const { questionData } = req.body;
     const type = questionData.question_type.split("-");
@@ -112,27 +171,26 @@ class QuestionsController {
 
   async matchingVerify(req, res) {
     const { left, right, type } = req.body;
-    const output = {isCorrect: false}
-    try{
+    const output = { isCorrect: false };
+    try {
       const data = await this.character.findOne({
-        where: {character: type[1] === "character" ? left : right}
-      })
-      if(type[1] === "character"){
-        if(type[2] === "vocabs"){
-          output.isCorrect = data.meaning === right
+        where: { character: type[1] === "character" ? left : right },
+      });
+      if (type[1] === "character") {
+        if (type[2] === "vocabs") {
+          output.isCorrect = data.meaning === right;
+        } else {
+          output.isCorrect = data.pronounciation === right;
         }
-        else{
-          output.isCorrect = data.pronounciation === right
-        }
-      }else{
+      } else {
         if (type[2] === "vocabs") {
           output.isCorrect = data.meaning === left;
         } else {
           output.isCorrect = data.pronounciation === left;
         }
       }
-      return res.json(output)
-    }catch(err){
+      return res.json(output);
+    } catch (err) {
       return res.status(400).json({ error: true, msg: err });
     }
   }
