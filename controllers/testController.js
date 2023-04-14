@@ -36,15 +36,15 @@ class TestController extends BaseController {
         where: { lesson_id: lesson_id },
         include: [{ model: this.character }, { model: this.question }],
       });
-      //Find matching question
+      //Find recognition question
       const matchingData = questions.filter((obj) =>
-        obj.question.type.includes("matching")
+        obj.question.type.includes("recognition")
       );
       //Get matching questionID
       const uniqueQuestionIds = {};
       const questionIDs = [];
       for (let i = 0; i < matchingData.length; i++) {
-        const questionId = matchingData[i].question_id;
+        const questionId = matchingData[matchingData.length-1-i].question_id;
         if (!uniqueQuestionIds[questionId]) {
           uniqueQuestionIds[questionId] = true;
           questionIDs.push(questionId);

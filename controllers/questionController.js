@@ -140,9 +140,49 @@ class QuestionsController {
       return res.status(400).json({ error: true, msg: err });
     }
   }
+
+  async randomRecognitionInput(req,res){
+    const { questionData, wordBank } = req.body;
+    const wordbank = wordBank.map(data => data.character)
+    const answer = questionData.answer
+    const pronounciation = questionData.answer_pronounciation
+    const data = {
+      character: answer.split("、").join(""),
+      pronounciation: pronounciation.split(",").join(""),
+    };
+    console.log(questionData)
+    try {
+      const input = randomGenerateInput(wordbank, answer.split("、").length, 3)
+      input.push(data)
+      return res.json(input);
+    } catch (err) {
+      return res.status(400).json({ error: true, msg: err });
+    }
+  }
 }
 module.exports = QuestionsController;
 
 function randomSort(arr) {
   return arr.slice().sort(() => 0.5 - Math.random());
+}
+
+function randomGenerateInput( wordbank, length , num ){
+  //choose a random word from word bank
+  const input = []
+  for(let i = 0; i < num; i++){
+    const singleInputData = []
+    for(let j = 0; j < length; j++){
+      //fetch a random character/word from wordbank
+      const randomCharacter = wordbank[Math.floor(Math.random() * wordbank.length)];
+      singleInputData.push(randomCharacter)
+    }
+    const character = singleInputData.map(data => data.character).join("")
+    const pronounciation = singleInputData.map((data) => data.pronounciation).join("")
+    const data = {
+      character: character,
+      pronounciation: pronounciation,
+    }
+    input.push(data)
+  }
+  return input
 }
