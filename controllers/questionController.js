@@ -36,12 +36,10 @@ class QuestionsController {
     });
     //push the correct ans as part of the input
     ansData.map((data) => input.push(data));
-    console.log(ans);
-    console.log(ansData);
+
     //This is to generate the remaining incorrect input
     try {
       let count = 0;
-      console.log(input);
       while (count < num) {
         const random = Math.floor(Math.random() * wordBank.length);
         if (!input.find((obj) => obj.id === wordBank[random].character.id)) {
@@ -68,8 +66,6 @@ class QuestionsController {
         .map((data) => data.character.character)
         .join("");
       const input = userInput.map((data) => data.character).join("");
-      console.log(answer);
-      console.log(input);
 
       return res.json({ isCorrect: answer === input ? true : false });
     } catch (err) {
@@ -198,9 +194,87 @@ class QuestionsController {
       return res.status(400).json({ error: true, msg: err });
     }
   }
+
+  async randomRecognitionInput(req,res){
+    const { questionData, wordBank } = req.body;
+    const wordbank = wordBank.map(data => data.character)
+    const answer = questionData.answer
+    const pronounciation = questionData.answer_pronounciation
+    const data = {
+      character: answer.split("、").join(""),
+      pronounciation: pronounciation.split(",").join(""),
+    };
+    try {
+      const input = randomGenerateInput(wordbank, answer.split("、").length, 3, data);
+      return res.json(randomSort(input));
+    } catch (err) {
+      return res.status(400).json({ error: true, msg: err });
+    }
+  }
+
+  async recognitionVerify(req,res){
+    const { answer, userAnswer } = req.body;
+    try {
+      const type = answer.question_type.split("-")
+      let ans
+      if(type[1] === "character"){
+        ans = answer.answer_pronounciation.split(",").join("");
+      }else{
+        ans = answer.answer.split("、").join("");
+      }
+
+      return res.json({isCorrect: userAnswer === ans});
+    } catch (err) {
+      return res.status(400).json({ error: true, msg: err });
+    }
+  }
 }
 module.exports = QuestionsController;
 
 function randomSort(arr) {
   return arr.slice().sort(() => 0.5 - Math.random());
+}
+
+function randomGenerateInput( wordbank, length , num , data){
+  //choose a random word from word bank
+  const input = [data]
+  //for hiragana/katakana with multi characters
+  if(length > 1){
+    for (let i = 0; i < num; i++) {
+      const singleInputData = [];
+      for (let j = 0; j < length; j++) {
+        //fetch a random character/word from wordbank
+        const randomCharacter =
+          wordbank[Math.floor(Math.random() * wordbank.length)];
+        singleInputData.push(randomCharacter);
+      }
+      const character = singleInputData.map((data) => data.character).join("");
+      const pronounciation = singleInputData
+        .map((data) => data.pronounciation)
+        .join("");
+      const data = {
+        character: character,
+        pronounciation: pronounciation,
+      };
+      input.push(data);
+    }
+  }
+  //Single characters/words
+  else{
+    let count = 0
+    while(count < num){
+      const randomCharacter = wordbank[Math.floor(Math.random() * wordbank.length)];
+      console.log(randomCharacter.character)
+      console.log(input[0].character)
+      if (!input.find((obj) => obj.character === randomCharacter.character)) {
+        const data ={
+          character: randomCharacter.character,
+          pronounciation: randomCharacter.pronounciation
+        }
+        input.push(data);
+        count += 1;
+      }
+    }
+  }
+  return input
 }
