@@ -12,6 +12,7 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       this.belongsToMany(models.lesson, { through: "userLesson" });
       this.belongsToMany(models.character, { through: "userWordbank" });
+      this.hasOne(models.voicevox);
     }
   }
   User.init(
