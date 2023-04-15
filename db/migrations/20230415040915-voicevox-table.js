@@ -1,7 +1,15 @@
 "use strict";
+
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
+    /**
+     * Add altering commands here.
+     *
+     * Example:
+     * await queryInterface.createTable('users', { id: Sequelize.INTEGER });
+     *
+     */
     await queryInterface.createTable("voicevoxes", {
       id: {
         allowNull: false,
@@ -25,7 +33,30 @@ module.exports = {
         type: Sequelize.STRING,
       },
     });
+    // await queryInterface.createTable("voicevox_users", {
+    //   id: {
+    //     allowNull: false,
+    //     autoIncrement: true,
+    //     primaryKey: true,
+    //     type: Sequelize.INTEGER,
+    //   },
+    //   user_id: {
+    //     type: Sequelize.INTEGER,
+    //     references: {
+    //       model: "users",
+    //       key: "id",
+    //     },
+    //   },
+    //   voicevox_id: {
+    //     type: Sequelize.INTEGER,
+    //     references: {
+    //       model: "voicevoxes",
+    //       key: "id",
+    //     },
+    //   },
+    // });
   },
+
   async down(queryInterface, Sequelize) {
     await queryInterface.dropTable("voicevoxes");
   },

@@ -37,10 +37,10 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      voicevox_id: {
-        allowNull: false,
-        type: Sequelize.INTEGER,
-      },
+      // voicevox_id: {
+      //   allowNull: false,
+      //   type: Sequelize.INTEGER,
+      // },
       created_at: {
         allowNull: false,
         type: Sequelize.DATE,

@@ -4,7 +4,9 @@ const { Op } = require("sequelize");
 class VoicevoxController extends BaseController {
   constructor(model) {
     super(model);
+    // this.userModel = userModel;
   }
+
   async getOne(req, res) {
     const { voicevox_id } = req.body;
     try {

@@ -89,7 +89,7 @@ const testController = new TestController(
   userWordbank,
   lesson_question_answer
 );
-const voicevoxController = new VoicevoxController(user, voicevox);
+const voicevoxController = new VoicevoxController(voicevox);
 // initializing routers
 const userRouter = new UsersRouter(usersController).routes();
 const characterRouter = new CharactersRouter(charactersController).routes();

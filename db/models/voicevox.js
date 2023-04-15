@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      this.belongsTo(models.user);
+      // this.belongsToMany(models.user, { through: "voicevox_users" });
     }
   }
   Voicevox.init(
@@ -24,6 +24,7 @@ module.exports = (sequelize, DataTypes) => {
       sequelize,
       modelName: "voicevox",
       underscored: true,
+      timestamps: false,
     }
   );
   return Voicevox;

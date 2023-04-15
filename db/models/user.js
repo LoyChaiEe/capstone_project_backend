@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       this.belongsToMany(models.lesson, { through: "userLesson" });
       this.belongsToMany(models.character, { through: "userWordbank" });
-      this.hasOne(models.voicevox);
+      // this.belongsToMany(models.voicevox, { through: "voicevox_users" });
     }
   }
   User.init(
@@ -38,11 +38,6 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
         allowNull: false,
         // validate: { notNull: { msg: "Please upload a valid photo." } },
-      },
-      voicevox_id: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        references: { model: "voicevox", key: "id" },
       },
     },
     {
