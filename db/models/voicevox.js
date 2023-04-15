@@ -1,7 +1,7 @@
 "use strict";
 const { Model } = require("sequelize");
 module.exports = (sequelize, DataTypes) => {
-  class voicevox extends Model {
+  class Voicevox extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
       this.belongsTo(models.user);
     }
   }
-  voicevox.init(
+  Voicevox.init(
     {
       voicevox_character: DataTypes.STRING,
       voicevox_intonation: DataTypes.STRING,
@@ -26,5 +26,5 @@ module.exports = (sequelize, DataTypes) => {
       underscored: true,
     }
   );
-  return voicevox;
+  return Voicevox;
 };

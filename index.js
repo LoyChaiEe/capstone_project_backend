@@ -111,7 +111,7 @@ app.use("/userWordbank", userWordbanksRouter);
 app.use("/LQA", lessonQuestionAnswerRouter);
 app.use("/questions", questionsRouter);
 app.use("/tests", testRouter);
-app.use("/voicevox", voicevoxRouter);
+app.use("/voicevoxes", voicevoxRouter);
 
 app.listen(process.env.PORT, () => {
   console.log(`Express app listening on port ${PORT}!`);

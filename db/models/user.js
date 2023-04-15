@@ -39,6 +39,11 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
         // validate: { notNull: { msg: "Please upload a valid photo." } },
       },
+      voicevox_id: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        references: { model: "voicevox", key: "id" },
+      },
     },
     {
       sequelize,

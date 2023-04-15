@@ -19,17 +19,27 @@ class UserController extends BaseController {
   }
   // add new user
   async addOne(req, res) {
-    const { username, first_name, last_name, email_address, profile_pic_url } =
-      req.body;
+    const {
+      username,
+      first_name,
+      last_name,
+      email_address,
+      profile_pic_url,
+      voicevox_id,
+    } = req.body;
+    console.log("REQUEST BODY", req.body);
     try {
       const emailExists = await this.model.findOne({
         where: {
           email_address: email_address,
         },
       });
+      console.log("EMAIL", email_address);
       if (emailExists) {
         res.json("Email exists");
+        console.log("SECOND CHECK", email_address);
       } else {
+        console.log("THRID CHECK", voicevox_id);
         const user = await this.model.create({
           where: { email_address: email_address },
           username: username,
@@ -37,10 +47,14 @@ class UserController extends BaseController {
           last_name: last_name,
           email_address: email_address,
           profile_pic_url: profile_pic_url,
+          voicevox_id: voicevox_id,
         });
+        console.log("USER", user);
         return res.json(user);
       }
+      console.log("SOMETHING");
     } catch (err) {
+      console.log(err);
       return res.status(400).json({ error: true, msg: err });
     }
   }

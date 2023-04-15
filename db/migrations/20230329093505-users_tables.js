@@ -39,7 +39,7 @@ module.exports = {
       },
       voicevox_id: {
         allowNull: false,
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
       },
       created_at: {
         allowNull: false,
