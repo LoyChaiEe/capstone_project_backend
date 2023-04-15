@@ -9,7 +9,10 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      // this.belongsToMany(models.user, { through: "voicevox_users" });
+      this.hasMany(models.user, {
+        as: "users",
+        foreignKey: "voicevox_id",
+      });
     }
   }
   Voicevox.init(

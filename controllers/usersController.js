@@ -25,7 +25,7 @@ class UserController extends BaseController {
       last_name,
       email_address,
       profile_pic_url,
-      // voicevox_id,
+      voicevox_id,
     } = req.body;
     try {
       const emailExists = await this.model.findOne({
@@ -43,7 +43,7 @@ class UserController extends BaseController {
           last_name: last_name,
           email_address: email_address,
           profile_pic_url: profile_pic_url,
-          // voicevox_id: voicevox_id,
+          voicevox_id: voicevox_id,
         });
         return res.json(user);
       }
