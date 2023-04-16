@@ -67,7 +67,7 @@ class UserController extends BaseController {
   }
   // update profile
   async updateProfile(req, res) {
-    const { first_name, last_name, username, email_address, country } =
+    const { first_name, last_name, username, email_address, voicevox_id } =
       req.body;
     try {
       const user = await this.model.findOne({
@@ -76,9 +76,9 @@ class UserController extends BaseController {
       user.first_name = first_name;
       user.last_name = last_name;
       user.username = username;
-      user.country = country;
+      user.voicevox_id = voicevox_id;
       await user.save({
-        fields: ["first_name", "last_name", "username", "country"],
+        fields: ["first_name", "last_name", "username", "voicevox_id"],
       });
       return res.json(user);
     } catch (err) {
