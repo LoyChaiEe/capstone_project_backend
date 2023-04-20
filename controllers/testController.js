@@ -38,7 +38,7 @@ class TestController extends BaseController {
       });
       //Find recognition question
       const matchingData = questions.filter((obj) =>
-        obj.question.type.includes("matching")
+        obj.question.type.includes("translation")
       );
       //Get matching questionID
       const uniqueQuestionIds = {};
