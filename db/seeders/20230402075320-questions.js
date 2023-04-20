@@ -312,7 +312,7 @@ module.exports = {
           type: "translation-Japanese-vocabs",
         },
         {
-          question: "Translate this sentence: やすいたかい",
+          question: "Translate this sentence: やすい、たかい",
           type: "translation-Japanese-vocabs",
         },
         {

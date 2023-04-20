@@ -1403,7 +1403,7 @@ module.exports = {
           character: "おちゃ",
           pronounciation: "ocha",
           type: "vocabs",
-          meaning: "  tea",
+          meaning: "tea",
           audio_url:
             "https://firebasestorage.googleapis.com/v0/b/waifu-3b5e3.appspot.com/o/audio-url%2F174-ocha.mp3?alt=media&token=a52ec9ee-bafb-4216-b171-2d2eb47736c9",
         },
