@@ -11,9 +11,7 @@ const db = require("./db/models/index");
 const {
   user,
   character,
-  answer,
   lesson,
-  lessonQuestion,
   lessonWord,
   question,
   userLesson,
@@ -77,9 +75,7 @@ const questionsController = new QuestionsController(
 const testController = new TestController(
   user,
   character,
-  answer,
   lesson,
-  lessonQuestion,
   lessonWord,
   question,
   userLesson,
@@ -98,6 +94,7 @@ const lessonQuestionAnswerRouter = new LQARouter(
 ).routes();
 const questionsRouter = new QuestionsRouter(questionsController).routes();
 const testRouter = new TestRouter(testController).routes();
+
 // routers
 app.use("/users", userRouter);
 app.use("/characters", characterRouter);
