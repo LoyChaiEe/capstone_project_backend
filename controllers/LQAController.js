@@ -78,6 +78,12 @@ class LQAController extends BaseController {
     try {
       const lessonWords = await this.lessonWord.findAll({
         where: { lesson_id: lesson_id },
+        include: [
+          {
+            model: this.character,
+            attributes: ["character"],
+          },
+        ],
       });
       return res.json(lessonWords);
     } catch (err) {
