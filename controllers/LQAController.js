@@ -72,9 +72,7 @@ class LQAController extends BaseController {
   }
 
   async getLessonWords(req, res) {
-    console.log("hi");
     const { lesson_id } = req.params;
-    console.log(lesson_id);
     try {
       const lessonWords = await this.lessonWord.findAll({
         where: { lesson_id: lesson_id },
