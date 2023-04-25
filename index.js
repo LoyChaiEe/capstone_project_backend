@@ -11,9 +11,7 @@ const db = require("./db/models/index");
 const {
   user,
   character,
-  answer,
   lesson,
-  lessonQuestion,
   lessonWord,
   question,
   userLesson,
@@ -81,9 +79,7 @@ const questionsController = new QuestionsController(
 const testController = new TestController(
   user,
   character,
-  answer,
   lesson,
-  lessonQuestion,
   lessonWord,
   question,
   userLesson,

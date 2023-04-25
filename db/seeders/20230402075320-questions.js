@@ -20,19 +20,31 @@ module.exports = {
           type: "recognition-pronounciation-vocabs",
         },
         {
-          question: "Select the character for: yasui",
+          question: "Select the character for: ni",
           type: "recognition-pronounciation-vocabs",
         },
         {
-          question: "Select the character for: ringo",
+          question: "Select the character for: san",
           type: "recognition-pronounciation-vocabs",
         },
         {
-          question: "Select the character for: desu",
+          question: "Select the character for: yon",
+          type: "recognition-pronounciation-vocabs",
+        },
+        {
+          question: "Select the character for: go",
+          type: "recognition-pronounciation-vocabs",
+        },
+        {
+          question: "Select the character for: niku",
           type: "recognition-pronounciation-vocabs",
         },
         {
           question: "Select the character for: mizu",
+          type: "recognition-pronounciation-vocabs",
+        },
+        {
+          question: "Select the character for: sushi",
           type: "recognition-pronounciation-vocabs",
         },
         {
@@ -44,11 +56,11 @@ module.exports = {
           type: "recognition-pronounciation-vocabs",
         },
         {
-          question: "Select the character for: yon",
+          question: "Select the character for: ringo",
           type: "recognition-pronounciation-vocabs",
         },
         {
-          question: "Select the character for: san",
+          question: "Select the character for: hashi",
           type: "recognition-pronounciation-vocabs",
         },
         {
@@ -56,7 +68,19 @@ module.exports = {
           type: "recognition-pronounciation-vocabs",
         },
         {
-          question: "Select the pronouciation for: ご",
+          question: "Select the character for: yasui",
+          type: "recognition-pronounciation-vocabs",
+        },
+        {
+          question: "Select the character for: oishi",
+          type: "recognition-pronounciation-vocabs",
+        },
+        {
+          question: "Select the character for: desu",
+          type: "recognition-pronounciation-vocabs",
+        },
+        {
+          question: "Select the pronouciation for: いち",
           type: "recognition-character-vocabs",
         },
         {
@@ -64,15 +88,19 @@ module.exports = {
           type: "recognition-character-vocabs",
         },
         {
-          question: "Select the pronouciation for: おちゃ",
+          question: "Select the pronouciation for: さん",
           type: "recognition-character-vocabs",
         },
         {
-          question: "Select the pronouciation for: やすい",
+          question: "Select the pronouciation for: よん",
           type: "recognition-character-vocabs",
         },
         {
-          question: "Select the pronouciation for: たかい",
+          question: "Select the pronouciation for: ご",
+          type: "recognition-character-vocabs",
+        },
+        {
+          question: "Select the pronouciation for: にく",
           type: "recognition-character-vocabs",
         },
         {
@@ -80,7 +108,15 @@ module.exports = {
           type: "recognition-character-vocabs",
         },
         {
-          question: "Select the pronouciation for: はし",
+          question: "Select the pronouciation for: すし",
+          type: "recognition-character-vocabs",
+        },
+        {
+          question: "Select the pronouciation for: そば",
+          type: "recognition-character-vocabs",
+        },
+        {
+          question: "Select the pronouciation for: おちゃ",
           type: "recognition-character-vocabs",
         },
         {
@@ -88,11 +124,15 @@ module.exports = {
           type: "recognition-character-vocabs",
         },
         {
-          question: "Select the pronouciation for: すし",
+          question: "Select the pronouciation for: はし",
           type: "recognition-character-vocabs",
         },
         {
-          question: "Select the pronouciation for: にく",
+          question: "Select the pronouciation for: たかい",
+          type: "recognition-character-vocabs",
+        },
+        {
+          question: "Select the pronouciation for: やすい",
           type: "recognition-character-vocabs",
         },
         {
@@ -104,52 +144,68 @@ module.exports = {
           type: "recognition-character-vocabs",
         },
         {
-          question: "What is the meaning of: ご",
-          type: "meaning-vocabs",
+          question: "What is the meaning of this: いち",
+          type: "meaning-character-vocabs",
         },
         {
-          question: "What is the meaning of:に",
-          type: "meaning-vocabs",
+          question: "What is the meaning of this: に",
+          type: "meaning-character-vocabs",
         },
         {
-          question: "What is the meaning of: おちゃ",
-          type: "meaning-vocabs",
+          question: "What is the meaning of this: さん",
+          type: "meaning-character-vocabs",
         },
         {
-          question: "What is the meaning of: やすい",
-          type: "meaning-vocabs",
+          question: "What is the meaning of this: よん",
+          type: "meaning-character-vocabs",
         },
         {
-          question: "What is the meaning of: たかい",
-          type: "meaning-vocabs",
+          question: "What is the meaning of this: ご",
+          type: "meaning-character-vocabs",
         },
         {
-          question: "What is the meaning of: みず",
-          type: "meaning-vocabs",
+          question: "What is the meaning of this: にく",
+          type: "meaning-character-vocabs",
         },
         {
-          question: "What is the meaning of: はし",
-          type: "meaning-vocabs",
+          question: "What is the meaning of this: みず",
+          type: "meaning-character-vocabs",
         },
         {
-          question: "What is the meaning of: りんご",
-          type: "meaning-vocabs",
+          question: "What is the meaning of this: すし",
+          type: "meaning-character-vocabs",
         },
         {
-          question: "What is the meaning of: すし",
-          type: "meaning-vocabs",
+          question: "What is the meaning of this: そば",
+          type: "meaning-character-vocabs",
         },
         {
-          question: "What is the meaning of: for: にく",
-          type: "meaning-vocabs",
+          question: "What is the meaning of this: おちゃ",
+          type: "meaning-character-vocabs",
         },
         {
-          question: "What is the meaning of: for: おいし",
-          type: "meaning-vocabs",
+          question: "What is the meaning of this: りんご",
+          type: "meaning-character-vocabs",
         },
         {
-          question: "What is the meaning of: にく",
-          type: "meaning-vocabs",
+          question: "What is the meaning of this: はし",
+          type: "meaning-character-vocabs",
+        },
+        {
+          question: "What is the meaning of this: たかい",
+          type: "meaning-character-vocabs",
+        },
+        {
+          question: "What is the meaning of this: やすい",
+          type: "meaning-character-vocabs",
+        },
+        {
+          question: "What is the meaning of this: おいし",
+          type: "meaning-character-vocabs",
+        },
+        {
+          question: "What is the meaning of this: です",
+          type: "meaning-character-vocabs",
         },
         {
           question: "Translate this sentence: one, two ,three",
@@ -256,7 +312,7 @@ module.exports = {
           type: "translation-Japanese-vocabs",
         },
         {
-          question: "Translate this sentence: やすいたかい",
+          question: "Translate this sentence: やすい、たかい",
           type: "translation-Japanese-vocabs",
         },
         {
@@ -276,11 +332,11 @@ module.exports = {
           type: "translation-Japanese-vocabs",
         },
         {
-          question: "Translate this sentence: おちゃです",
+          question: "Translate this sentence: おちゃです。",
           type: "translation-Japanese-vocabs",
         },
         {
-          question: "Translate this sentence: はしです",
+          question: "Translate this sentence: はしです。",
           type: "translation-Japanese-vocabs",
         },
         {
@@ -310,6 +366,66 @@ module.exports = {
         {
           question: "Translate this sentence: おいしりんご",
           type: "translation-Japanese-vocabs",
+        },
+        {
+          question: "Match the words to their meaning",
+          type: "matching-character-vocabs",
+        },
+        {
+          question: "Match the words to their meaning",
+          type: "matching-character-vocabs",
+        },
+        {
+          question: "Match the words to their meaning",
+          type: "matching-character-vocabs",
+        },
+        {
+          question: "Match the words to their meaning",
+          type: "matching-character-vocabs",
+        },
+        {
+          question: "Match the words to their meaning",
+          type: "matching-character-vocabs",
+        },
+        {
+          question: "Match the words to their meaning",
+          type: "matching-character-vocabs",
+        },
+        {
+          question: "Match the words to their meaning",
+          type: "matching-character-vocabs",
+        },
+        {
+          question: "Match the words to their meaning",
+          type: "matching-character-vocabs",
+        },
+        {
+          question: "Match the words to their meaning",
+          type: "matching-character-vocabs",
+        },
+        {
+          question: "Match the words to their meaning",
+          type: "matching-character-vocabs",
+        },
+        {
+          question: "Match the words to their meaning",
+          type: "matching-character-vocabs",
+        },
+        {
+          question: "Match the words to their meaning",
+          type: "matching-character-vocabs",
+        },
+        {
+          question: "Match the words to their meaning",
+          type: "matching-character-vocabs",
+        },
+        {
+          question: "Match the words to their meaning",
+          type: "matching-character-vocabs",
+        },
+        {
+          question: "Match the words to their meaning",
+          type: "matching-character-vocabs",
         },
         {
           question: "Translate this sentence: It is tasty meat",
@@ -368,11 +484,11 @@ module.exports = {
           type: "translation-Japanese-vocabs",
         },
         {
-          question: "Translate this sentence: ろく、さん、ご、いち",
+          question: "Translate this sentence: よん、さん、ご、いち",
           type: "translation-Japanese-vocabs",
         },
         {
-          question: "Translate this sentence: よん、いち、ろく",
+          question: "Translate this sentence: よん、いち、に",
           type: "translation-Japanese-vocabs",
         },
         {
@@ -392,88 +508,128 @@ module.exports = {
           type: "translation-Japanese-vocabs",
         },
         {
-          question: "Translate this sentence: seven, eight, nine, ten",
-          type: "translation-English-vocabs",
+          question: "Match the meaning to their words",
+          type: "matching-meaning-vocabs",
         },
         {
-          question: "Translate this sentence: ten, eleven, twelve",
-          type: "translation-English-vocabs",
+          question: "Match the meaning to their words",
+          type: "matching-meaning-vocabs",
         },
         {
-          question: "Translate this sentence: one, two, three, four, five, six",
-          type: "translation-English-vocabs",
+          question: "Match the meaning to their words",
+          type: "matching-meaning-vocabs",
         },
         {
-          question: "Translate this sentence: nine, ten, eleven, twelve",
-          type: "translation-English-vocabs",
+          question: "Match the meaning to their words",
+          type: "matching-meaning-vocabs",
         },
         {
-          question: "Translate this sentence: twelve, eleven, ten",
-          type: "translation-English-vocabs",
+          question: "Match the meaning to their words",
+          type: "matching-meaning-vocabs",
         },
         {
-          question: "Translate this sentence: eight, seven ,six, five",
-          type: "translation-English-vocabs",
+          question: "Match the meaning to their words",
+          type: "matching-meaning-vocabs",
         },
         {
-          question: "Translate this sentence: five, four, three, two, one",
-          type: "translation-English-vocabs",
+          question: "Match the meaning to their words",
+          type: "matching-meaning-vocabs",
         },
         {
-          question: "Translate this sentence: meat and chopstick",
-          type: "translation-English-vocabs",
+          question: "Match the meaning to their words",
+          type: "matching-meaning-vocabs",
         },
         {
-          question: "Translate this sentence: water or tea",
-          type: "translation-English-vocabs",
+          question: "Match the meaning to their words",
+          type: "matching-meaning-vocabs",
         },
         {
-          question: "Translate this sentence: cat and dog",
-          type: "translation-English-vocabs",
+          question: "Match the meaning to their words",
+          type: "matching-meaning-vocabs",
         },
         {
-          question: "Translate this sentence: it is a bird",
-          type: "translation-English-vocabs",
+          question: "Match the meaning to their words",
+          type: "matching-meaning-vocabs",
         },
         {
-          question: "Translate this sentence: it is a dog",
-          type: "translation-English-vocabs",
+          question: "Match the meaning to their words",
+          type: "matching-meaning-vocabs",
         },
         {
-          question: "Translate this sentence: it is a cat",
-          type: "translation-English-vocabs",
+          question: "Match the meaning to their words",
+          type: "matching-meaning-vocabs",
         },
         {
-          question: "Translate this sentence: He is a doctor",
-          type: "translation-English-vocabs",
+          question: "Match the meaning to their words",
+          type: "matching-meaning-vocabs",
         },
         {
-          question: "Translate this sentence: Is she a student",
-          type: "translation-English-vocabs",
+          question: "Match the meaning to their words",
+          type: "matching-meaning-vocabs",
         },
         {
-          question: "Translate this sentence: Is he a friend",
-          type: "translation-English-vocabs",
+          question: "Write this character: あ",
+          type: "writing-character-hiragana",
         },
         {
-          question: "Translate this sentence: Is it good?",
-          type: "translation-English-vocabs",
+          question: "Write this character: い",
+          type: "writing-character-hiragana",
         },
         {
-          question: "Translate this sentence: Is it small?",
-          type: "translation-English-vocabs",
+          question: "Write this character: う",
+          type: "writing-character-hiragana",
         },
         {
-          question: "Translate this sentence: Is it big?",
-          type: "translation-English-vocabs",
+          question: "Write this character: え",
+          type: "writing-character-hiragana",
         },
         {
-          question: "Translate this sentence: white or black",
-          type: "translation-English-vocabs",
+          question: "Write this character: お",
+          type: "writing-character-hiragana",
         },
         {
-          question: "Translate this sentence: She is a teacher",
-          type: "translation-English-vocabs",
+          question: "Write this character: か",
+          type: "writing-character-hiragana",
+        },
+        {
+          question: "Write this character: き",
+          type: "writing-character-hiragana",
+        },
+        {
+          question: "Write this character: く",
+          type: "writing-character-hiragana",
+        },
+        {
+          question: "Write this character: す",
+          type: "writing-character-hiragana",
+        },
+        {
+          question: "Write this character: し",
+          type: "writing-character-hiragana",
+        },
+        {
+          question: "Write this character: ん",
+          type: "writing-character-hiragana",
+        },
+        {
+          question: "Write this character: ち",
+          type: "writing-character-hiragana",
+        },
+        {
+          question: "Write this character: に",
+          type: "writing-character-hiragana",
+        },
+        {
+          question: "Write this character: み",
+          type: "writing-character-hiragana",
+        },
+        {
+          question: "Write this character: そ",
+          type: "writing-character-hiragana",
+        },
+        {
+          question: "Write this character: た",
+          type: "writing-character-hiragana",
         },
         {
           question: "Select the characters for: a",
@@ -608,71 +764,119 @@ module.exports = {
           type: "matching-character-hiragana",
         },
         {
-          question: "Match the characters to their sounds",
+          question: "Match the characters to their pronounciation",
           type: "matching-character-hiragana",
         },
         {
-          question: "Match the characters to their sounds",
+          question: "Match the characters to their pronounciation",
           type: "matching-character-hiragana",
         },
         {
-          question: "Match the characters to their sounds",
+          question: "Match the characters to their pronounciation",
           type: "matching-character-hiragana",
         },
         {
-          question: "Match the characters to their sounds",
+          question: "Match the characters to their pronounciation",
           type: "matching-character-hiragana",
         },
         {
-          question: "Match the characters to their sounds",
+          question: "Match the characters to their pronounciation",
           type: "matching-character-hiragana",
         },
         {
-          question: "Match the characters to their sounds",
+          question: "Match the characters to their pronounciation",
           type: "matching-character-hiragana",
         },
         {
-          question: "Match the characters to their sounds",
+          question: "Match the characters to their pronounciation",
           type: "matching-character-hiragana",
         },
         {
-          question: "Match the characters to their sounds",
+          question: "Match the characters to their pronounciation",
           type: "matching-character-hiragana",
         },
         {
-          question: "Match the sounds to the characters",
+          question: "Match the characters to their pronounciation",
+          type: "matching-character-hiragana",
+        },
+        {
+          question: "Match the characters to their pronounciation",
+          type: "matching-character-hiragana",
+        },
+        {
+          question: "Match the characters to their pronounciation",
+          type: "matching-character-hiragana",
+        },
+        {
+          question: "Match the characters to their pronounciation",
+          type: "matching-character-hiragana",
+        },
+        {
+          question: "Match the characters to their pronounciation",
+          type: "matching-character-hiragana",
+        },
+        {
+          question: "Match the characters to their pronounciation",
+          type: "matching-character-hiragana",
+        },
+        {
+          question: "Match the pronounciation to the characters",
           type: "matching-pronounciation-hiragana",
         },
         {
-          question: "Match the sounds to the characters",
+          question: "Match the pronounciation to the characters",
           type: "matching-pronounciation-hiragana",
         },
         {
-          question: "Match the sounds to the characters",
+          question: "Match the pronounciation to the characters",
           type: "matching-pronounciation-hiragana",
         },
         {
-          question: "Match the sounds to the characters",
+          question: "Match the pronounciation to the characters",
           type: "matching-pronounciation-hiragana",
         },
         {
-          question: "Match the sounds to the characters",
+          question: "Match the pronounciation to the characters",
           type: "matching-pronounciation-hiragana",
         },
         {
-          question: "Match the sounds to the characters",
+          question: "Match the pronounciation to the characters",
           type: "matching-pronounciation-hiragana",
         },
         {
-          question: "Match the sounds to the characters",
+          question: "Match the pronounciation to the characters",
           type: "matching-pronounciation-hiragana",
         },
         {
-          question: "Match the sounds to the characters",
+          question: "Match the pronounciation to the characters",
           type: "matching-pronounciation-hiragana",
         },
         {
-          question: "Match the sounds to the characters",
+          question: "Match the pronounciation to the characters",
+          type: "matching-pronounciation-hiragana",
+        },
+        {
+          question: "Match the pronounciation to the characters",
+          type: "matching-pronounciation-hiragana",
+        },
+        {
+          question: "Match the pronounciation to the characters",
+          type: "matching-pronounciation-hiragana",
+        },
+        {
+          question: "Match the pronounciation to the characters",
+          type: "matching-pronounciation-hiragana",
+        },
+        {
+          question: "Match the pronounciation to the characters",
+          type: "matching-pronounciation-hiragana",
+        },
+        {
+          question: "Match the pronounciation to the characters",
+          type: "matching-pronounciation-hiragana",
+        },
+        {
+          question: "Match the pronounciation to the characters",
           type: "matching-pronounciation-hiragana",
         },
         {
@@ -804,76 +1008,68 @@ module.exports = {
           type: "recognition-character-hiragana",
         },
         {
-          question: "Match the characters to their sounds",
-          type: "matching-character-hiragana",
+          question: "Write this character: ア",
+          type: "writing-character-katakana",
         },
         {
-          question: "Match the characters to their sounds",
-          type: "matching-character-hiragana",
+          question: "Write this character: イ",
+          type: "writing-character-katakana",
         },
         {
-          question: "Match the characters to their sounds",
-          type: "matching-character-hiragana",
+          question: "Write this character: ウ",
+          type: "writing-character-katakana",
         },
         {
-          question: "Match the characters to their sounds",
-          type: "matching-character-hiragana",
+          question: "Write this character: エ",
+          type: "writing-character-katakana",
         },
         {
-          question: "Match the characters to their sounds",
-          type: "matching-character-hiragana",
+          question: "Write this character: オ",
+          type: "writing-character-katakana",
         },
         {
-          question: "Match the characters to their sounds",
-          type: "matching-character-hiragana",
+          question: "Write this character: カ",
+          type: "writing-character-katakana",
         },
         {
-          question: "Match the characters to their sounds",
-          type: "matching-character-hiragana",
+          question: "Write this character: キ",
+          type: "writing-character-katakana",
         },
         {
-          question: "Match the characters to their sounds",
-          type: "matching-character-hiragana",
+          question: "Write this character: ク",
+          type: "writing-character-katakana",
         },
         {
-          question: "Match the characters to their sounds",
-          type: "matching-character-hiragana",
+          question: "Write this character: ス",
+          type: "writing-character-katakana",
         },
         {
-          question: "Match the sounds to the characters",
-          type: "matching-pronounciation-hiragana",
+          question: "Write this character: シ",
+          type: "writing-character-katakana",
         },
         {
-          question: "Match the sounds to the characters",
-          type: "matching-pronounciation-hiragana",
+          question: "Write this character: ン",
+          type: "writing-character-katakana",
         },
         {
-          question: "Match the sounds to the characters",
-          type: "matching-pronounciation-hiragana",
+          question: "Write this character: チ",
+          type: "writing-character-katakana",
         },
         {
-          question: "Match the sounds to the characters",
-          type: "matching-pronounciation-hiragana",
+          question: "Write this character: ニ",
+          type: "writing-character-katakana",
         },
         {
-          question: "Match the sounds to the characters",
-          type: "matching-pronounciation-hiragana",
+          question: "Write this character: ミ",
+          type: "writing-character-katakana",
         },
         {
-          question: "Match the sounds to the characters",
-          type: "matching-pronounciation-hiragana",
+          question: "Write this character: ソ",
+          type: "writing-character-katakana",
         },
         {
-          question: "Match the sounds to the characters",
-          type: "matching-pronounciation-hiragana",
-        },
-        {
-          question: "Match the sounds to the characters",
-          type: "matching-pronounciation-hiragana",
-        },
-        {
-          question: "Match the sounds to the characters",
-          type: "matching-pronounciation-hiragana",
+          question: "Write this character: タ",
+          type: "writing-character-katakana",
         },
         {
           question: "Select the characters for: a",
@@ -1004,75 +1200,123 @@ module.exports = {
           type: "recognition-character-katakana",
         },
         {
-          question: "Match the characters to sounds",
+          question: "Match the characters to their pronounciation",
           type: "matching-character-katakana",
         },
         {
-          question: "Match the characters to sounds",
+          question: "Match the characters to their pronounciation",
           type: "matching-character-katakana",
         },
         {
-          question: "Match the characters to sounds",
+          question: "Match the characters to their pronounciation",
           type: "matching-character-katakana",
         },
         {
-          question: "Match the characters to sounds",
+          question: "Match the characters to their pronounciation",
           type: "matching-character-katakana",
         },
         {
-          question: "Match the characters to sounds",
+          question: "Match the characters to their pronounciation",
           type: "matching-character-katakana",
         },
         {
-          question: "Match the characters to sounds",
+          question: "Match the characters to their pronounciation",
           type: "matching-character-katakana",
         },
         {
-          question: "Match the characters to sounds",
+          question: "Match the characters to their pronounciation",
           type: "matching-character-katakana",
         },
         {
-          question: "Match the characters to sounds",
+          question: "Match the characters to their pronounciation",
           type: "matching-character-katakana",
         },
         {
-          question: "Match the characters to sounds",
+          question: "Match the characters to their pronounciation",
           type: "matching-character-katakana",
         },
         {
-          question: "Match the sounds to the characters",
+          question: "Match the characters to their pronounciation",
+          type: "matching-character-katakana",
+        },
+        {
+          question: "Match the characters to their pronounciation",
+          type: "matching-character-katakana",
+        },
+        {
+          question: "Match the characters to their pronounciation",
+          type: "matching-character-katakana",
+        },
+        {
+          question: "Match the characters to their pronounciation",
+          type: "matching-character-katakana",
+        },
+        {
+          question: "Match the characters to their pronounciation",
+          type: "matching-character-katakana",
+        },
+        {
+          question: "Match the characters to their pronounciation",
+          type: "matching-character-katakana",
+        },
+        {
+          question: "Match the pronounciation to the characters",
           type: "matching-pronounciation-katakana",
         },
         {
-          question: "Match the sounds to the characters",
+          question: "Match the pronounciation to the characters",
           type: "matching-pronounciation-katakana",
         },
         {
-          question: "Match the sounds to the characters",
+          question: "Match the pronounciation to the characters",
           type: "matching-pronounciation-katakana",
         },
         {
-          question: "Match the sounds to the characters",
+          question: "Match the pronounciation to the characters",
           type: "matching-pronounciation-katakana",
         },
         {
-          question: "Match the sounds to the characters",
+          question: "Match the pronounciation to the characters",
           type: "matching-pronounciation-katakana",
         },
         {
-          question: "Match the sounds to the characters",
+          question: "Match the pronounciation to the characters",
           type: "matching-pronounciation-katakana",
         },
         {
-          question: "Match the sounds to the characters",
+          question: "Match the pronounciation to the characters",
           type: "matching-pronounciation-katakana",
         },
         {
-          question: "Match the sounds to the characters",
+          question: "Match the pronounciation to the characters",
           type: "matching-pronounciation-katakana",
         },
         {
-          question: "Match the sounds to the characters",
+          question: "Match the pronounciation to the characters",
+          type: "matching-pronounciation-katakana",
+        },
+        {
+          question: "Match the pronounciation to the characters",
+          type: "matching-pronounciation-katakana",
+        },
+        {
+          question: "Match the pronounciation to the characters",
+          type: "matching-pronounciation-katakana",
+        },
+        {
+          question: "Match the pronounciation to the characters",
+          type: "matching-pronounciation-katakana",
+        },
+        {
+          question: "Match the pronounciation to the characters",
+          type: "matching-pronounciation-katakana",
+        },
+        {
+          question: "Match the pronounciation to the characters",
+          type: "matching-pronounciation-katakana",
+        },
+        {
+          question: "Match the pronounciation to the characters",
           type: "matching-pronounciation-katakana",
         },
         {
@@ -1162,30 +1406,6 @@ module.exports = {
         {
           question: "Select the pronounciation of: スイカ",
           type: "recognition-character-katakana",
-        },
-        {
-          question: "Match the sounds to the characters",
-          type: "matching-katakana",
-        },
-        {
-          question: "Match the sounds to the characters",
-          type: "matching-katakana",
-        },
-        {
-          question: "Match the sounds to the characters",
-          type: "matching-katakana",
-        },
-        {
-          question: "Match the sounds to the characters",
-          type: "matching-katakana",
-        },
-        {
-          question: "Match the sounds to the characters",
-          type: "matching-katakana",
-        },
-        {
-          question: "Match the sounds to the characters",
-          type: "matching-katakana",
         },
       ],
       {}

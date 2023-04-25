@@ -10,9 +10,8 @@ module.exports = (sequelize, DataTypes) => {
     //Asscoiation
     static associate(models) {
       this.belongsToMany(models.character, { through: "answer" });
-      this.belongsToMany(models.lesson, { through: "lessonQuestion" });
-      this.belongsToMany(models.lesson, { through: "LQA" });
-      this.belongsToMany(models.character, { through: "LQA" });
+      this.belongsToMany(models.lesson, { through: "lesson_question_answer" });
+      this.belongsToMany(models.character, { through: "lesson_question_answer" });
     }
   }
   Question.init(
