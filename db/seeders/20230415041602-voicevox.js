@@ -15,6 +15,7 @@ module.exports = {
     await queryInterface.bulkInsert("voicevoxes", [
       {
         voicevox_character: "四国めたん",
+        voicevox_english: "Shikoku Metan",
         voicevox_intonation: "sweet",
         voicevox_voice: "0",
         full_body_image_url:
@@ -24,6 +25,7 @@ module.exports = {
       },
       {
         voicevox_character: "ずんだもん",
+        voicevox_english: "Zundamon",
         voicevox_intonation: "normal",
         voicevox_voice: "3",
         full_body_image_url:
@@ -33,6 +35,7 @@ module.exports = {
       },
       {
         voicevox_character: "春日部つむぎ",
+        voicevox_english: "Tsumugi Kasukabe",
         voicevox_intonation: "normal",
         voicevox_voice: "8",
         full_body_image_url:
@@ -42,6 +45,7 @@ module.exports = {
       },
       {
         voicevox_character: "雨晴はう",
+        voicevox_english: "Rainy Weather",
         voicevox_intonation: "normal",
         voicevox_voice: "10",
         full_body_image_url:
@@ -51,6 +55,7 @@ module.exports = {
       },
       {
         voicevox_character: "波音リツ",
+        voicevox_english: "Namion Ritsu",
         voicevox_intonation: "normal",
         voicevox_voice: "9",
         full_body_image_url:
@@ -60,6 +65,7 @@ module.exports = {
       },
       {
         voicevox_character: "冥鳴ひまり",
+        voicevox_english: "Himari",
         voicevox_intonation: "normal",
         voicevox_voice: "14",
         full_body_image_url:
@@ -69,6 +75,7 @@ module.exports = {
       },
       {
         voicevox_character: "九州そら",
+        voicevox_english: "Kyushu Sky",
         voicevox_intonation: "normal",
         voicevox_voice: "16",
         full_body_image_url:
@@ -78,6 +85,7 @@ module.exports = {
       },
       {
         voicevox_character: "もち子さん",
+        voicevox_english: "Mochiko",
         voicevox_intonation: "normal",
         voicevox_voice: "20",
         full_body_image_url:
@@ -87,6 +95,7 @@ module.exports = {
       },
       {
         voicevox_character: "白いドレス",
+        voicevox_english: "White Dress",
         voicevox_intonation: "fun",
         voicevox_voice: "24",
         full_body_image_url:
@@ -96,6 +105,7 @@ module.exports = {
       },
       {
         voicevox_character: "後鬼",
+        voicevox_english: "Goki",
         voicevox_intonation: "normal",
         voicevox_voice: "27",
         full_body_image_url:
@@ -105,6 +115,7 @@ module.exports = {
       },
       {
         voicevox_character: "7号",
+        voicevox_english: "No. 7",
         voicevox_intonation: "normal",
         voicevox_voice: "29",
         full_body_image_url:
@@ -114,6 +125,7 @@ module.exports = {
       },
       {
         voicevox_character: "櫻歌ミコ",
+        voicevox_english: "Sakuraka Miko",
         voicevox_intonation: "normal",
         voicevox_voice: "43",
         full_body_image_url:
@@ -123,6 +135,7 @@ module.exports = {
       },
       {
         voicevox_character: "小夜",
+        voicevox_english: "Sayo",
         voicevox_intonation: "normal",
         voicevox_voice: "46",
         full_body_image_url:
@@ -132,6 +145,7 @@ module.exports = {
       },
       {
         voicevox_character: "ナースロボ",
+        voicevox_english: "Nurse Robo",
         voicevox_intonation: "effortlessly",
         voicevox_voice: "48",
         full_body_image_url:

@@ -20,6 +20,9 @@ module.exports = {
       voicevox_character: {
         type: Sequelize.STRING,
       },
+      voicevox_english: {
+        type: Sequelize.STRING,
+      },
       voicevox_intonation: {
         type: Sequelize.STRING,
       },

@@ -18,6 +18,7 @@ module.exports = (sequelize, DataTypes) => {
   Voicevox.init(
     {
       voicevox_character: DataTypes.STRING,
+      voicevox_english: DataTypes.STRING,
       voicevox_intonation: DataTypes.STRING,
       voicevox_voice: DataTypes.STRING,
       full_body_image_url: DataTypes.STRING,
