@@ -174,7 +174,10 @@ class QuestionsController {
     const output = { isCorrect: false };
     try {
       const data = await this.character.findOne({
-        where: { character: type[1] === "character" ? left : right },
+        where: {
+          character: type[1] === "character" ? left : right,
+          type: { [Op.like]: `%${type[2]}%` },
+        },
       });
       if (type[1] === "character") {
         if (type[2] === "vocabs") {

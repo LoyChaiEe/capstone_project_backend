@@ -1,3 +1,4 @@
+const lesson_question_answer = require("../db/models/lesson_question_answer");
 const BaseController = require("./baseController");
 const { Op } = require("sequelize");
 
@@ -6,9 +7,7 @@ class TestController extends BaseController {
   constructor(
     model,
     character,
-    answer,
     lesson,
-    lessonQuestion,
     lessonWord,
     question,
     userLesson,
@@ -17,9 +16,7 @@ class TestController extends BaseController {
   ) {
     super(model);
     this.character = character;
-    this.answer = answer;
     this.lesson = lesson;
-    this.lessonQuestion = lessonQuestion;
     this.lessonWord = lessonWord;
     this.question = question;
     this.userLesson = userLesson;
@@ -30,6 +27,7 @@ class TestController extends BaseController {
   async getQuestionID(req, res) {
     //req LQA
     const { lesson_id } = req.params;
+    console.log(lesson_id)
     try {
       // Retrieve all
       const questions = await this.LQA.findAll({
@@ -38,7 +36,7 @@ class TestController extends BaseController {
       });
       //Find recognition question
       const matchingData = questions.filter((obj) =>
-        obj.question.type.includes("matching")
+        obj.question.type.includes("writing")
       );
       //Get matching questionID
       const uniqueQuestionIds = {};
@@ -52,7 +50,7 @@ class TestController extends BaseController {
       }
       //Re-format data retrieve into the database into a more simplified one to one form
       const questionDatas = [];
-      for (let i = 0; i < 3; i++) {
+      for (let i = 0; i < 5; i++) {
         const questionData = matchingData.filter(
           (question) => question.question_id === questionIDs[i]
         );
