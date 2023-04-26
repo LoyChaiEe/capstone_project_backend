@@ -34,7 +34,7 @@ class UserController extends BaseController {
         },
       });
       if (emailExists) {
-        res.json("Email exists");
+        res.json(emailExists);
       } else {
         const user = await this.model.create({
           where: { email_address: email_address },
