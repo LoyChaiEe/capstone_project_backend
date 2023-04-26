@@ -2,8 +2,9 @@ const express = require("express");
 const router = express.Router();
 
 class CharactersRouter {
-  constructor(controller) {
+  constructor(controller, checkJwt) {
     this.controller = controller;
+    this.checkJwt = checkJwt;
   }
   routes() {
     //Insert routes and controller's api calls here

@@ -27,7 +27,7 @@ class TestController extends BaseController {
   async getQuestionID(req, res) {
     //req LQA
     const { lesson_id } = req.params;
-    console.log(lesson_id)
+    console.log(lesson_id);
     try {
       // Retrieve all
       const questions = await this.LQA.findAll({
@@ -36,7 +36,7 @@ class TestController extends BaseController {
       });
       //Find recognition question
       const matchingData = questions.filter((obj) =>
-        obj.question.type.includes("writing")
+        obj.question.type.includes("recognition")
       );
       //Get matching questionID
       const uniqueQuestionIds = {};

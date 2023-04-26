@@ -89,13 +89,17 @@ const testController = new TestController(
 const voicevoxController = new VoicevoxController(voicevox);
 // initializing routers
 const userRouter = new UsersRouter(usersController, checkJwt).routes();
-const characterRouter = new CharactersRouter(charactersController).routes();
+const characterRouter = new CharactersRouter(
+  charactersController,
+  checkJwt
+).routes();
 const userWordbanksRouter = new UserWordbanksRouter(
   userWordbanksController
 ).routes();
 const userLessonsRouter = new UserLessonsRouter(userLessonsController).routes();
 const lessonQuestionAnswerRouter = new LQARouter(
-  lessonQuestionsController
+  lessonQuestionsController,
+  checkJwt
 ).routes();
 const questionsRouter = new QuestionsRouter(questionsController).routes();
 const testRouter = new TestRouter(testController).routes();
