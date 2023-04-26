@@ -12,8 +12,8 @@ class UsersRouter {
     router.get("/:userEmail", this.controller.getOne.bind(this.controller));
     router.post(
       "/newUser",
-      this.checkJwt,
-      this.controller.addOne.bind(this.controller)
+      this.controller.addOne.bind(this.controller),
+      this.checkJwt
     );
     router.put(
       "/photoUrl",
