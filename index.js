@@ -88,7 +88,7 @@ const testController = new TestController(
 );
 const voicevoxController = new VoicevoxController(voicevox);
 // initializing routers
-const userRouter = new UsersRouter(usersController).routes();
+const userRouter = new UsersRouter(usersController, checkJwt).routes();
 const characterRouter = new CharactersRouter(charactersController).routes();
 const userWordbanksRouter = new UserWordbanksRouter(
   userWordbanksController
