@@ -27,7 +27,7 @@ class TestController extends BaseController {
   async getQuestionID(req, res) {
     //req LQA
     const { lesson_id } = req.params;
-    console.log(lesson_id)
+    console.log(lesson_id);
     try {
       // Retrieve all
       const questions = await this.LQA.findAll({

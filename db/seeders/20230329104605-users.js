@@ -22,6 +22,7 @@ module.exports = {
           email_address: "adminadam@gmail.com",
           profile_pic_url:
             "gs://waifu-3b5e3.appspot.com/profile-picture-url/AdminAdam.jpg",
+          voicevox_id: "1",
           created_at: new Date(),
           updated_at: new Date(),
         },
@@ -32,6 +33,7 @@ module.exports = {
           email_address: "adminbella@gmail.com",
           profile_pic_url:
             "gs://waifu-3b5e3.appspot.com/profile-picture-url/AdminBella.jpg",
+          voicevox_id: "1",
           created_at: new Date(),
           updated_at: new Date(),
         },
@@ -42,6 +44,7 @@ module.exports = {
           email_address: "admincharlie@gmail.com",
           profile_pic_url:
             "gs://waifu-3b5e3.appspot.com/profile-picture-url/AdminCharlie.jpg",
+          voicevox_id: "1",
           created_at: new Date(),
           updated_at: new Date(),
         },
@@ -53,6 +56,7 @@ module.exports = {
           email_address: "adminDelta@gmail.com",
           profile_pic_url:
             "gs://waifu-3b5e3.appspot.com/profile-picture-url/AdminAdam.jpg",
+          voicevox_id: "1",
           created_at: new Date(),
           updated_at: new Date(),
         },
