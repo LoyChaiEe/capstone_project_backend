@@ -101,7 +101,10 @@ const lessonQuestionAnswerRouter = new LQARouter(
   lessonQuestionsController,
   checkJwt
 ).routes();
-const questionsRouter = new QuestionsRouter(questionsController).routes();
+const questionsRouter = new QuestionsRouter(
+  questionsController,
+  checkJwt
+).routes();
 const testRouter = new TestRouter(testController).routes();
 const voicevoxRouter = new VoicevoxRouter(voicevoxController).routes();
 // routers

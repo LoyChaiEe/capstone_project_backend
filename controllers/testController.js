@@ -36,7 +36,7 @@ class TestController extends BaseController {
       });
       //Find recognition question
       const matchingData = questions.filter((obj) =>
-        obj.question.type.includes("writing")
+        obj.question.type.includes("matching")
       );
       //Get matching questionID
       const uniqueQuestionIds = {};
