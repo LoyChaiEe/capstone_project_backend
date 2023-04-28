@@ -138,26 +138,5 @@ class UserWordbanksController extends BaseController {
       return res.status(400).json({ error: true, msg: err });
     }
   }
-
-  async addUserHiranagaBank(req, res) {
-    const { user_id: userID, lesson_id } = req.body;
-    const user_id = parseInt(userID);
-    try {
-      const findHiragana = await this.lessonWord.findAll({
-        where: { lesson_id: lesson_id },
-        attributes: ["character_id"],
-      });
-      console.log(user_id);
-      const data = findHiragana.map((word) => {
-        const data = { userId: user_id, characterId: word.character_id };
-        return data;
-      });
-      const addHiragana = await this.model.bulkCreate(data);
-      console.log(addHiragana);
-      return res.json(addHiragana);
-    } catch (err) {
-      return res.status(400).json({ error: true, msg: err });
-    }
-  }
 }
 module.exports = UserWordbanksController;

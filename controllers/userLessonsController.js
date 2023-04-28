@@ -20,7 +20,7 @@ class UserLessonsController extends BaseController {
         order: [["lesson_id", "DESC"]],
         limit: 1,
       });
-      const latestLessonId = userProgress[0]?.lesson_id || 11;
+      const latestLessonId = userProgress[0]?.lesson_id || 10;
       return res.json(latestLessonId);
     } catch (err) {
       return res.status(400).json({ error: true, msg: err });
@@ -38,7 +38,7 @@ class UserLessonsController extends BaseController {
         order: [["lesson_id", "DESC"]],
         limit: 1,
       });
-      const latestLessonId = userProgress[0]?.lesson_id || 21;
+      const latestLessonId = userProgress[0]?.lesson_id || 20;
       return res.json(latestLessonId);
     } catch (err) {
       return res.status(400).json({ error: true, msg: err });
@@ -68,14 +68,12 @@ class UserLessonsController extends BaseController {
     const { user_id, lesson_id } = req.body;
     console.log(user_id, lesson_id);
     try {
-      console.log("yay");
       const addNewLesson = await this.model.findOrCreate({
         where: {
           userId: user_id,
           lessonId: lesson_id,
         },
       });
-      console.log("ADDED", addNewLesson);
       return res.json(addNewLesson);
     } catch (err) {
       return res.status(400).json({ error: true, msg: err });

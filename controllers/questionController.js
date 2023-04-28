@@ -273,8 +273,6 @@ function randomGenerateInput(wordbank, length, num, data) {
     while (count < num) {
       const randomCharacter =
         wordbank[Math.floor(Math.random() * wordbank.length)];
-      console.log(randomCharacter.character);
-      console.log(input[0].character);
       if (!input.find((obj) => obj.character === randomCharacter.character)) {
         const data = {
           character: randomCharacter.character,
