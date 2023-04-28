@@ -198,35 +198,40 @@ class QuestionsController {
     }
   }
 
-  async randomRecognitionInput(req,res){
+  async randomRecognitionInput(req, res) {
     const { questionData, wordBank } = req.body;
-    const wordbank = wordBank.map(data => data.character)
-    const answer = questionData.answer
-    const pronounciation = questionData.answer_pronounciation
+    const wordbank = wordBank.map((data) => data.character);
+    const answer = questionData.answer;
+    const pronounciation = questionData.answer_pronounciation;
     const data = {
       character: answer.split("、").join(""),
       pronounciation: pronounciation.split(",").join(""),
     };
     try {
-      const input = randomGenerateInput(wordbank, answer.split("、").length, 3, data);
+      const input = randomGenerateInput(
+        wordbank,
+        answer.split("、").length,
+        3,
+        data
+      );
       return res.json(randomSort(input));
     } catch (err) {
       return res.status(400).json({ error: true, msg: err });
     }
   }
 
-  async recognitionVerify(req,res){
+  async recognitionVerify(req, res) {
     const { answer, userAnswer } = req.body;
     try {
-      const type = answer.question_type.split("-")
-      let ans
-      if(type[1] === "character"){
+      const type = answer.question_type.split("-");
+      let ans;
+      if (type[1] === "character") {
         ans = answer.answer_pronounciation.split(",").join("");
-      }else{
+      } else {
         ans = answer.answer.split("、").join("");
       }
 
-      return res.json({isCorrect: userAnswer === ans});
+      return res.json({ isCorrect: userAnswer === ans });
     } catch (err) {
       return res.status(400).json({ error: true, msg: err });
     }
@@ -238,11 +243,11 @@ function randomSort(arr) {
   return arr.slice().sort(() => 0.5 - Math.random());
 }
 
-function randomGenerateInput( wordbank, length , num , data){
+function randomGenerateInput(wordbank, length, num, data) {
   //choose a random word from word bank
-  const input = [data]
+  const input = [data];
   //for hiragana/katakana with multi characters
-  if(length > 1){
+  if (length > 1) {
     for (let i = 0; i < num; i++) {
       const singleInputData = [];
       for (let j = 0; j < length; j++) {
@@ -263,21 +268,22 @@ function randomGenerateInput( wordbank, length , num , data){
     }
   }
   //Single characters/words
-  else{
-    let count = 0
-    while(count < num){
-      const randomCharacter = wordbank[Math.floor(Math.random() * wordbank.length)];
-      console.log(randomCharacter.character)
-      console.log(input[0].character)
+  else {
+    let count = 0;
+    while (count < num) {
+      const randomCharacter =
+        wordbank[Math.floor(Math.random() * wordbank.length)];
+      console.log(randomCharacter.character);
+      console.log(input[0].character);
       if (!input.find((obj) => obj.character === randomCharacter.character)) {
-        const data ={
+        const data = {
           character: randomCharacter.character,
-          pronounciation: randomCharacter.pronounciation
-        }
+          pronounciation: randomCharacter.pronounciation,
+        };
         input.push(data);
         count += 1;
       }
     }
   }
-  return input
+  return input;
 }

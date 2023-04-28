@@ -20,6 +20,7 @@ class UserLessonsRouter {
       "/vocabs/:id",
       this.controller.getUserProgressVocab.bind(this.controller)
     );
+    router.post("/add", this.controller.addNewUserLesson.bind(this.controller));
     return router;
   }
 }

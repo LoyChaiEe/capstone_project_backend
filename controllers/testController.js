@@ -36,7 +36,7 @@ class TestController extends BaseController {
       });
       //Find recognition question
       const matchingData = questions.filter((obj) =>
-        obj.question.type.includes("katakana")
+        obj.question.type.includes("writing")
       );
       //Get matching questionID
       const uniqueQuestionIds = {};

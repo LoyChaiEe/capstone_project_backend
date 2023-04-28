@@ -12,11 +12,11 @@ class UserWordbanksRouter {
       "/hiragana/:id",
       this.controller.getUserHiraganaBank.bind(this.controller)
     );
-    router.get(
+    router.post(
       "/katakana/:id",
       this.controller.getUserKatakanaBank.bind(this.controller)
     );
-    router.get(
+    router.post(
       "/vocabs/:id",
       this.controller.getUserVocabBank.bind(this.controller)
     );
