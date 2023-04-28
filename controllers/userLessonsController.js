@@ -15,24 +15,31 @@ class UserLessonsController extends BaseController {
       const userProgress = await this.model.findAll({
         include: [
           { model: this.user, where: { id: userID } },
-          { model: this.lesson, where: { type: "hiragana"} },
+          { model: this.lesson, where: { type: "hiragana" } },
         ],
+        order: [["lesson_id", "DESC"]],
+        limit: 1,
       });
-      return res.json(userProgress);
+      const latestLessonId = userProgress[0]?.lesson_id || 11;
+      return res.json(latestLessonId);
     } catch (err) {
       return res.status(400).json({ error: true, msg: err });
     }
   }
+
   async getUserProgressKatakana(req, res) {
     const { id: userID } = req.params;
     try {
       const userProgress = await this.model.findAll({
         include: [
           { model: this.user, where: { id: userID } },
-          { model: this.lesson, where: { type: "katakana"} },
+          { model: this.lesson, where: { type: "katakana" } },
         ],
+        order: [["lesson_id", "DESC"]],
+        limit: 1,
       });
-      return res.json(userProgress);
+      const latestLessonId = userProgress[0]?.lesson_id || 21;
+      return res.json(latestLessonId);
     } catch (err) {
       return res.status(400).json({ error: true, msg: err });
     }
@@ -51,5 +58,5 @@ class UserLessonsController extends BaseController {
       return res.status(400).json({ error: true, msg: err });
     }
   }
-} 
+}
 module.exports = UserLessonsController;

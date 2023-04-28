@@ -62,7 +62,8 @@ const userLessonsController = new UserLessonsController(
 const userWordbanksController = new UserWordbanksController(
   userWordbank,
   user,
-  character
+  character,
+  lessonWord
 );
 const lessonQuestionsController = new LQAController(
   lesson_question_answer,

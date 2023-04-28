@@ -36,7 +36,7 @@ class TestController extends BaseController {
       });
       //Find recognition question
       const matchingData = questions.filter((obj) =>
-        obj.question.type.includes("matching")
+        obj.question.type.includes("katakana")
       );
       //Get matching questionID
       const uniqueQuestionIds = {};
@@ -70,6 +70,7 @@ class TestController extends BaseController {
           answer: answer.replace(/\s+/g, ""), //regex to remove whitespace
           answer_pronounciation: answer_pronounciation.replace(/\s+/g, ""),
           meaning: meaning.replace(/\s+/g, ""),
+          audio_disabled: questionData[0].audio_disabled,
         };
         questionDatas.push(data);
       }

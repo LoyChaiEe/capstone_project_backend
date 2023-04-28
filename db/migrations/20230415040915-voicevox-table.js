@@ -36,28 +36,6 @@ module.exports = {
         type: Sequelize.STRING,
       },
     });
-    await queryInterface.createTable("voicevox_users", {
-      id: {
-        allowNull: false,
-        autoIncrement: true,
-        primaryKey: true,
-        type: Sequelize.INTEGER,
-      },
-      user_id: {
-        type: Sequelize.INTEGER,
-        references: {
-          model: "users",
-          key: "id",
-        },
-      },
-      voicevox_id: {
-        type: Sequelize.INTEGER,
-        references: {
-          model: "voicevoxes",
-          key: "id",
-        },
-      },
-    });
   },
 
   async down(queryInterface, Sequelize) {
