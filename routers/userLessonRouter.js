@@ -8,9 +8,19 @@ class UserLessonsRouter {
   routes() {
     //Insert routes and controller's api calls here
     router.get("/", this.controller.getAll.bind(this.controller));
-    router.get("/hiragana/:id", this.controller.getUserProgressHiragana.bind(this.controller));
-    router.get("/katakana/:id", this.controller.getUserProgressKatakana.bind(this.controller));
-    router.get("/vocabs/:id", this.controller.getUserProgressVocab.bind(this.controller));
+    router.get(
+      "/hiragana/:id",
+      this.controller.getUserProgressHiragana.bind(this.controller)
+    );
+    router.get(
+      "/katakana/:id",
+      this.controller.getUserProgressKatakana.bind(this.controller)
+    );
+    router.get(
+      "/vocabs/:id",
+      this.controller.getUserProgressVocab.bind(this.controller)
+    );
+    router.post("/add", this.controller.addNewUserLesson.bind(this.controller));
     return router;
   }
 }

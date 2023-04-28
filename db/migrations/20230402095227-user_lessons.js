@@ -1,8 +1,10 @@
-'use strict';
+"use strict";
+
+const { DataTypes } = require("sequelize");
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
-  async up (queryInterface, Sequelize) {
+  async up(queryInterface, Sequelize) {
     /**
      * Add altering commands here.
      *
@@ -12,9 +14,10 @@ module.exports = {
     await queryInterface.createTable("user_lessons", {
       id: {
         allowNull: false,
-        autoIncrement: true,
+        // autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER,
+        type: DataTypes.UUID,
+        defaultValue: Sequelize.literal("gen_random_uuid()"),
       },
       user_id: {
         type: Sequelize.INTEGER,
@@ -22,6 +25,8 @@ module.exports = {
           model: "users",
           key: "id",
         },
+        unique: false,
+        allowNull: false,
       },
       lesson_id: {
         type: Sequelize.INTEGER,
@@ -29,6 +34,8 @@ module.exports = {
           model: "lessons",
           key: "id",
         },
+        unique: false,
+        allowNull: false,
       },
       created_at: {
         allowNull: false,
@@ -41,7 +48,7 @@ module.exports = {
     });
   },
 
-  async down (queryInterface, Sequelize) {
+  async down(queryInterface, Sequelize) {
     /**
      * Add reverting commands here.
      *
@@ -49,5 +56,5 @@ module.exports = {
      * await queryInterface.dropTable('usersLessons');
      */
     await queryInterface.dropTable("user_lessons");
-  }
+  },
 };

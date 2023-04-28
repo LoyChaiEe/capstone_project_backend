@@ -62,6 +62,7 @@ class LQAController extends BaseController {
           answer: answer.replace(/\s+/g, ""), //regex to remove whitespace
           answer_pronounciation: answer_pronounciation.replace(/\s+/g, ""),
           meaning: meaning.replace(/\s+/g, ""),
+          audio_disabled: questionData[0].audio_disabled,
         };
         questionDatas.push(data);
       }
