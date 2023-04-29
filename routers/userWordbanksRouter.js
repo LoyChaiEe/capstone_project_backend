@@ -20,10 +20,6 @@ class UserWordbanksRouter {
       "/vocabs/:id",
       this.controller.getUserVocabBank.bind(this.controller)
     );
-    router.post(
-      "/update/hiragana",
-      this.controller.addUserHiranagaBank.bind(this.controller)
-    );
     return router;
   }
 }

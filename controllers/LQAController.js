@@ -10,7 +10,6 @@ class LQAController extends BaseController {
     this.character = character;
     this.wordBank = wordBank;
     this.lessonWord = lessonWord;
-    console.log(this.model);
   }
 
   async getQuestionID(req, res) {
