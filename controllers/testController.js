@@ -2,6 +2,7 @@ const lesson_question_answer = require("../db/models/lesson_question_answer");
 const BaseController = require("./baseController");
 const { Op } = require("sequelize");
 
+// test code should be removed once we dont need it
 class TestController extends BaseController {
   //model is user model
   constructor(

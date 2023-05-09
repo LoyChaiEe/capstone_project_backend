@@ -1,5 +1,5 @@
 "use strict";
-
+// good job on the migrations and seeders! Every file one change, just like that!
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {

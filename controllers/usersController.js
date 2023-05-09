@@ -27,6 +27,7 @@ class UserController extends BaseController {
       profile_pic_url,
       voicevox_id,
     } = req.body;
+    // let's validate the data first before we insert into the db
     try {
       const emailExists = await this.model.findOne({
         where: {
@@ -34,16 +35,13 @@ class UserController extends BaseController {
         },
       });
       if (emailExists) {
+        // so if the email exists, you return the user? That seems very unsafe. We can just spam the server with emails, and get back all user accounts
         res.json(emailExists);
       } else {
         const user = await this.model.create({
+          // where clause in create?
           where: { email_address: email_address },
-          username: username,
-          first_name: first_name,
-          last_name: last_name,
-          email_address: email_address,
-          profile_pic_url: profile_pic_url,
-          voicevox_id: voicevox_id,
+          ...req.body,
         });
         return res.json(user);
       }
@@ -69,6 +67,7 @@ class UserController extends BaseController {
   async updateProfile(req, res) {
     const { first_name, last_name, username, email_address, voicevox_id } =
       req.body;
+      // definitely should work on validation next!
     try {
       const user = await this.model.findOne({
         where: { email_address: email_address },
@@ -80,6 +79,8 @@ class UserController extends BaseController {
       await user.save({
         fields: ["first_name", "last_name", "username", "voicevox_id"],
       });
+
+      // why not user.update(req.body) ?
       return res.json(user);
     } catch (err) {
       return res.status(400).json({ error: true, msg: err });

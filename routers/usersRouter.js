@@ -8,6 +8,7 @@ class UsersRouter {
   }
   routes() {
     //Insert routes and controller's api calls here
+    // should never have a route to get all users, very unsafe
     router.get("/", this.controller.getAll.bind(this.controller));
     router.get("/:userEmail", this.controller.getOne.bind(this.controller));
     router.post(

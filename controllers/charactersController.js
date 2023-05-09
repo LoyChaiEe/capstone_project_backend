@@ -17,8 +17,10 @@ class CharacterController extends BaseController {
         },
       });
       //Convert to 2D array for basics
+      // we should define a private class method here, that will deal with this logic instead of typing it all down in the getHiragana function on its own. Abstract it a bit more :)
       let basic = [];
       let count = 0;
+      // what is 45? Name it!
       while (count < 45) {
         for (let i = 0; i < rows.length; i++) {
           let row = [];
@@ -64,6 +66,7 @@ class CharacterController extends BaseController {
       }
       return res.json({ basic: basic, dakuon: dakuon });
     } catch (err) {
+      // return 400 if your db query fails? I think this should be 500.
       return res.status(400).json({ error: true, msg: err });
     }
   }
@@ -102,6 +105,7 @@ class CharacterController extends BaseController {
       basic.push([katakana[count], null, null, null, null]);
       count += 1;
 
+      // same logic as above? dont repeat yourself, use a function!
       // convert to 2D array for dakuon
       const dakuonRows = ["g", "z", "d", "b", "p"];
       const dakuonExceptions = ["ji", "zu"];

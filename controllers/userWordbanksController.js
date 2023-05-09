@@ -24,7 +24,7 @@ class UserWordbanksController extends BaseController {
         ],
       });
       if (!userHiragana.length) {
-        const getLessonWords = await this.lessonWord.findAll({
+        const lessonWords = await this.lessonWord.findAll({
           where: { lesson_id: 11 },
           include: [
             {
@@ -33,13 +33,14 @@ class UserWordbanksController extends BaseController {
             },
           ],
         });
-        const hiraganaWords = getLessonWords.map((word) => {
+        const hiraganaWords = lessonWords.map((word) => {
           const data = {
             userId: user_id,
             characterId: word.character.id,
           };
           return data;
         });
+        // is the purpose of this function to "get" or to create? I am confused.
         const addNewHiragana = await this.model.bulkCreate(hiraganaWords);
         const userHiragana = await this.model.findAll({
           where: { user_id: user_id },
