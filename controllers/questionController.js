@@ -13,6 +13,7 @@ class QuestionsController {
     const { wordBank, answer, difficulty } = req.body;
     const ans = answer.split("、");
     let num;
+    // create a function for this and return the result.
     switch (difficulty) {
       case "easy":
         num = 3;
@@ -40,6 +41,7 @@ class QuestionsController {
     //This is to generate the remaining incorrect input
     try {
       let count = 0;
+      // could this lead to a potential infinite loop, since the count + 1 is included in an if statement?
       while (count < num) {
         const random = Math.floor(Math.random() * wordBank.length);
         if (!input.find((obj) => obj.id === wordBank[random].character.id)) {
@@ -67,7 +69,7 @@ class QuestionsController {
         .join("");
       const input = userInput.map((data) => data.character).join("");
 
-      return res.json({ isCorrect: answer === input ? true : false });
+      return res.json({ isCorrect: answer === input }); // the comparison result is a boolean already
     } catch (err) {
       return res.status(400).json({ error: true, msg: err });
     }
@@ -142,6 +144,9 @@ class QuestionsController {
       let input;
       let output;
       //Vocabs input and output
+      // assigning type[1] and [2] might be easier to tell what it actually is and how that comes about.
+      // this here is some kind of invisible and unknown business logic, that only the author of the code knows.
+      // very hard to work with in the future!
       if (type[1] === "character") {
         input = character;
         //if vocabs set meaning as vocabs, else set pronounciation (cause there is only either vocabs or hiragana/katakana)
@@ -179,6 +184,8 @@ class QuestionsController {
           type: { [Op.like]: `%${type[2]}%` },
         },
       });
+      // this whole logic needs more explanation
+      // I am sure we can code this also without spaghetti code somehow :)!
       if (type[1] === "character") {
         if (type[2] === "vocabs") {
           output.isCorrect = data.meaning === right;
@@ -208,6 +215,7 @@ class QuestionsController {
       pronounciation: pronounciation.split(",").join(""),
     };
     try {
+      // generateRandomInput ?
       const input = randomGenerateInput(
         wordbank,
         answer.split("、").length,
@@ -247,7 +255,7 @@ function randomGenerateInput(wordbank, length, num, data) {
   //choose a random word from word bank
   const input = [data];
   //for hiragana/katakana with multi characters
-  if (length > 1) {
+  if (length) { // 0 is falsy, above 0 is truthy
     for (let i = 0; i < num; i++) {
       const singleInputData = [];
       for (let j = 0; j < length; j++) {
@@ -285,3 +293,8 @@ function randomGenerateInput(wordbank, length, num, data) {
   }
   return input;
 }
+
+// this whole file is quite messy.
+// Since I don't understand all the underlying business logic, unfortunately I can't comment too much on your choice of code.
+// However, I highly recommend refactoring with such code and trying to think of ways to make things neater.
+// Better naming, more use of functions (which gives names to processes), abstracting things more and possibly using better data structures and design decisions to simplify our code.

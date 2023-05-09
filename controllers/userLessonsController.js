@@ -19,6 +19,7 @@ class UserLessonsController extends BaseController {
         ],
         order: [["lesson_id", "DESC"]],
         limit: 1,
+        attributes: ["lesson_id"],
       });
       const latestLessonId = userProgress[0]?.lesson_id || 10;
       return res.json(latestLessonId);
@@ -45,6 +46,16 @@ class UserLessonsController extends BaseController {
     }
   }
 
+  // these are pretty much 3 times the same request. Can't we just get the type via query params?
+  // the default progress could be stored in a static object somewhere, which you then access depending on the type.
+  /*
+
+  const defaultProgress = {
+    "katakana": 20,
+    "vocabs": 1,
+  }
+
+  */
   async getUserProgressVocab(req, res) {
     const { id: userID } = req.params;
     const user_id = parseInt(userID);

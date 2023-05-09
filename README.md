@@ -22,3 +22,5 @@ Please refer to the .env.sample file as an example of the keys required for this
 1. <a href="https://github.com/LoyChaiEe/capstone_project_frontend">Frontend</a>
 2. <a href="https://github.com/LoyChaiEe/capstone_project_backend">Backend</a>
 3. <a href="https://github.com/LoyChaiEe/capstone_flask">Flask</a>
+
+<!-- Which db do I need, how do I install it? How do I install the things to install? More background to the project would also be good. Planning documents, where? -->

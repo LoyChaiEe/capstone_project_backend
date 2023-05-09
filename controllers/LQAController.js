@@ -17,12 +17,14 @@ class LQAController extends BaseController {
     const { lesson_id } = req.params;
     try {
       // Retrieve all distinct qurestionID
+      // these are not IDs, but questions, aren't these?
       const questionIDs = await this.model.findAll({
         where: { lesson_id: lesson_id },
         attributes: [
           [Sequelize.literal('DISTINCT "question_id"'), "question_id"],
         ],
       });
+      // why not make the DB query return 15 unique and ranom questions?
       // Select 15 random and unique question_ids for lesson_id
       const question_id = questionIDs.map((question) => question.question_id);
       let count = 0;
@@ -35,6 +37,7 @@ class LQAController extends BaseController {
         }
       }
       //Get question Data
+      // second db query to again get all of the model? I think if we get 15 random questions in the first db query, we can just include the 2 models here and save us a db call
       const selectedQuestionDatas = await this.model.findAll({
         where: { question_id: selectedQuestionID, lesson_id: lesson_id },
         include: [{ model: this.question }, { model: this.character }],
@@ -46,6 +49,7 @@ class LQAController extends BaseController {
           (question) => question.question_id === selectedQuestionID[i]
         );
         const answer = questionData
+        // I despise 1 letter naming of things. It makes everything harder to read. Ideally spell out what q is.
           .map((q) => q.character.character)
           .join("、");
         const answer_pronounciation = questionData
@@ -65,6 +69,7 @@ class LQAController extends BaseController {
         };
         questionDatas.push(data);
       }
+      // for all the logic above we should write custom functions.
       return res.json(questionDatas);
     } catch (err) {
       return res.status(400).json({ error: true, msg: err });

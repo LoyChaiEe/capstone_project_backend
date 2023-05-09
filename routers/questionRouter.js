@@ -7,6 +7,7 @@ class QuestionsRouter {
     this.controller = controller;
     this.checkJwt = checkJwt;
   }
+  // need to move checkJwt before the functions here on every route. You possibly allow inserting of items into the DB, before running the auth check!!!
   routes() {
     //Insert routes and controller's api calls here
     router.post(

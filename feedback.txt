@@ -1,0 +1,24 @@
+Okay first feedback for the BE repo here.
+
+I think overall the comments from the FE will still apply here.
+However, on the BE I see way more business logic decisions being made in your code.
+The big problem with this lies in how you deal with it in your code. Without proper naming, giving context via comments or explaining things appropriately via documentation, it is very hard to review the code itself.
+Things like accessing array elements via their index, and then using that data to perform other operations. From an objective point of view I would have no idea what is happening there. Try to improve in that aspect.
+
+I still see repetition regularly in this repo, and we should strive to use functions to dynamically come to a solution.
+
+One big thing you should work on next is validation of request bodies, parameters etc.
+We should think more about security of our server, how and who we grant access to our resources (db records etc.). What do we let be inserted into the db? Etc. etc.
+Focus on that to become better Backend Engineers.
+
+Overall:
+
+You both really surprised me. I thought Chai ee would quit at some point due to school, and Nick I thought would drown with the increasingly more complex content on the Backend side of things. You both pulled through, AWESOME!
+
+Chai ee / Khun Aroy(??? was that it hahahahah):
+I think your biggest strength is your drive for tech. I can see a lot of effort for whatever you are passionate about. I have enjoyed your technical implementations, which were partially quite complex. I think when it comes to logical thinking and problem solve, you definitely are cut out for it. For the future, you would need to see what you prefer. Working with your strengths? Improving on your weaknesses? If there is one thing I would see you work on for the future, it is to try and organize your thoughts better. That is not just in public speaking and communication in general, but also when it comes to coding. I often feel confused when you hastily try to put together questions, or when reading your code as it follows the same kind of pattern I think. By organizing your thoughts more before starting to code/speak/communicate, you will definitely become a more proficient engineer overall.
+
+Nick:
+What a ride! From no engineering at all, to only doing css, to battling your own weaknesses to become a proper engineer! I have to give you big respect to have made the turnaround after project 2, and not just wanting to do nice-looking things, but actually deliver nice-looking, fully functional and comprehensive software. That was a huge task to tackle, out of your comfort zone, but you delivered! I think you have a great eye for details, and you should keep using that when coding. The design is what gives us the specifications for our code, and if you can think like a designer while coding, you will be able to spot bad UX easily, give feedback to the team, improve the whole process and enrich any company in their efforts to deliver good products. However, I would love for you to see you keep challenging yourself! Discover more libraries that are commonly used nowadays, learn more about different frontend architectures, learn another framework like Vue or Angular possibly. Dabble in ReactQuery, SWR and the like. Learn graphQL. You name it! What I really want you to improve on technically, is giving your code more thought. I feel you are often repeating yourself, which would be improved by rethinking and giving your own code critique. If it feels ugly and wrong, it probably is :) Next step is thinking about how you can improve the code, while still reaching your goal.
+
+Great job guys, you two were a bliss to work with. I always love students willing to learn and showing the drive. I am sure you will find a future in tech!

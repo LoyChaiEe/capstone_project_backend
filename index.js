@@ -20,6 +20,7 @@ const {
   voicevox,
 } = db;
 
+// can we dynamically retrieve and import routers and controllers? Node gives us that capabilities to read files, so we should try our hand at that. See sequelize index.js file :) 
 // Routers
 const UsersRouter = require("./routers/usersRouter");
 const CharactersRouter = require("./routers/charactersRouter");
@@ -48,6 +49,7 @@ const PORT = process.env.PORT;
 const app = express();
 
 // enable CORS access to this server and middle wares
+// watch out with enabling * for cors in the future, as you allow EVERYONE access. If you work on internal systems, we might want to provide specific clients access to our server only. Not feedback, just a note for the future!
 app.use(cors("*"));
 app.use(express.json());
 
